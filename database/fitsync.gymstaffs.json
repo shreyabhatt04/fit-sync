@@ -1,0 +1,189 @@
+[{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19e6"
+  },
+  "staffType": "Trainer",
+  "name": "Rina Iyer",
+  "email": "rina.iyer@powerhousegym.com",
+  "phone": "9876543301",
+  "alternatePhone": "",
+  "bloodGroup": "A+",
+  "maritalStatus": "Single",
+  "dateOfBirth": {
+    "$date": "1992-08-12T00:00:00.000Z"
+  },
+  "healthInsurance": false,
+  "healthInsuranceNote": "",
+  "healthInsuranceDocUrl": "",
+  "aadhaarOnFile": false,
+  "aadhaarLast4": "",
+  "panNumber": "",
+  "monthlySalary": 32000,
+  "achievements": "Certified strength & conditioning specialist. 6 years coaching weight-loss programs.",
+  "isPersonalTrainer": true,
+  "personalTrainerSalary": 8000,
+  "isActive": true,
+  "gymId": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.545Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.545Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19e8"
+  },
+  "staffType": "Helpdesk",
+  "name": "Vivek Trivedi",
+  "email": "vivek.trivedi@powerhousegym.com",
+  "phone": "9876543302",
+  "alternatePhone": "",
+  "bloodGroup": "O+",
+  "maritalStatus": "Married",
+  "dateOfBirth": {
+    "$date": "1988-11-30T00:00:00.000Z"
+  },
+  "healthInsurance": false,
+  "healthInsuranceNote": "",
+  "healthInsuranceDocUrl": "",
+  "aadhaarOnFile": false,
+  "aadhaarLast4": "",
+  "panNumber": "",
+  "monthlySalary": 22000,
+  "achievements": "",
+  "isPersonalTrainer": false,
+  "personalTrainerSalary": 0,
+  "isActive": true,
+  "gymId": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.547Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19ea"
+  },
+  "staffType": "Cleaner",
+  "name": "Ramesh Solanki",
+  "email": "ramesh@powerhousegym.com",
+  "phone": "9876543303",
+  "alternatePhone": "",
+  "bloodGroup": "",
+  "maritalStatus": "",
+  "healthInsurance": false,
+  "healthInsuranceNote": "",
+  "healthInsuranceDocUrl": "",
+  "aadhaarOnFile": false,
+  "aadhaarLast4": "",
+  "panNumber": "",
+  "monthlySalary": 14000,
+  "achievements": "",
+  "isPersonalTrainer": false,
+  "personalTrainerSalary": 0,
+  "isActive": true,
+  "gymId": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.548Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19ec"
+  },
+  "staffType": "Trainer",
+  "name": "Pooja Nair",
+  "email": "pooja.nair@fitzone.in",
+  "phone": "9876543311",
+  "alternatePhone": "",
+  "bloodGroup": "B+",
+  "maritalStatus": "Single",
+  "dateOfBirth": {
+    "$date": "1994-03-22T00:00:00.000Z"
+  },
+  "healthInsurance": false,
+  "healthInsuranceNote": "",
+  "healthInsuranceDocUrl": "",
+  "aadhaarOnFile": false,
+  "aadhaarLast4": "",
+  "panNumber": "",
+  "monthlySalary": 35000,
+  "achievements": "CrossFit Level 2 trainer. Specializes in HIIT and functional fitness.",
+  "isPersonalTrainer": true,
+  "personalTrainerSalary": 9000,
+  "isActive": true,
+  "gymId": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.549Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.549Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19ee"
+  },
+  "staffType": "Helpdesk",
+  "name": "Anjali Desai",
+  "email": "anjali.desai@fitzone.in",
+  "phone": "9876543312",
+  "alternatePhone": "",
+  "bloodGroup": "",
+  "maritalStatus": "",
+  "healthInsurance": false,
+  "healthInsuranceNote": "",
+  "healthInsuranceDocUrl": "",
+  "aadhaarOnFile": false,
+  "aadhaarLast4": "",
+  "panNumber": "",
+  "monthlySalary": 24000,
+  "achievements": "",
+  "isPersonalTrainer": false,
+  "personalTrainerSalary": 0,
+  "isActive": true,
+  "gymId": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.550Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.550Z"
+  },
+  "__v": 0
+}]

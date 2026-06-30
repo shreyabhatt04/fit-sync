@@ -1,0 +1,188 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "name": "PowerHouse Gym",
+  "slug": "powerhouse-gym",
+  "email": "info@powerhousegym.com",
+  "phone": "7912345678",
+  "address": "12, SG Highway, Bodakdev",
+  "city": "Ahmedabad",
+  "state": "Gujarat",
+  "established": "2018",
+  "website": "https://powerhousegym.in",
+  "description": "Premium fitness destination in Ahmedabad. State-of-the-art equipment, expert trainers, and a community that pushes you to be your best.",
+  "gstNumber": "24ABCDE1234F1Z5",
+  "owner": {
+    "name": "Vikrant Shah",
+    "email": "vikrant.shah@powerhousegym.com",
+    "phone": "9876543200",
+    "alternatePhone": "7926581234",
+    "dateOfBirth": {
+      "$date": "1985-07-22T00:00:00.000Z"
+    },
+    "aadhaarLast4": "7891",
+    "panNumber": "ABCPS1234E",
+    "address": "14, Vastrapur Lake Road, Vastrapur, Ahmedabad, Gujarat 380015"
+  },
+  "bankDetails": {
+    "bankName": "HDFC Bank",
+    "accountNumber": "50100123456789",
+    "ifsc": "HDFC0001234",
+    "accountHolderName": "PowerHouse Gym Pvt Ltd",
+    "upiId": "powerhouse@okhdfcbank"
+  },
+  "logo": null,
+  "plan": "pro",
+  "status": "active",
+  "modules": {
+    "members": true,
+    "attendance": true,
+    "payments": true,
+    "memberships": true,
+    "reports": true,
+    "tasks": true,
+    "targets": true,
+    "promotions": true,
+    "staff": true
+  },
+  "maxMembers": 50,
+  "maxStaff": 3,
+  "settings": {
+    "timezone": "Asia/Kolkata",
+    "currency": "INR",
+    "dateFormat": "DD/MM/YYYY"
+  },
+  "companyId": null,
+  "trialEndsAt": {
+    "$date": "2026-05-18T13:43:16.352Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.353Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.647Z"
+  },
+  "__v": 0,
+  "ownerId": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "name": "FitZone Fitness",
+  "slug": "fitzone-fitness",
+  "email": "hello@fitzone.in",
+  "phone": "2612345678",
+  "address": "203, Adajan Patia",
+  "city": "Surat",
+  "state": "Gujarat",
+  "established": "2020",
+  "website": "https://fitzone.in",
+  "description": "Surat's friendliest neighbourhood gym. Expert coaching, group classes, and personal attention for every member.",
+  "gstNumber": "24FGHIJ5678K2Z9",
+  "owner": {
+    "name": "Meera Shah",
+    "email": "meera.shah@fitzone.in",
+    "phone": "9876543300",
+    "alternatePhone": "2612345679",
+    "dateOfBirth": {
+      "$date": "1990-11-08T00:00:00.000Z"
+    },
+    "aadhaarLast4": "4523",
+    "panNumber": "FGHPS5678K",
+    "address": "7B, Citylight Road, Athwa, Surat, Gujarat 395007"
+  },
+  "bankDetails": {
+    "bankName": "ICICI Bank",
+    "accountNumber": "50200987654321",
+    "ifsc": "ICIC0009876",
+    "accountHolderName": "FitZone Fitness",
+    "upiId": "fitzone@okicici"
+  },
+  "logo": null,
+  "plan": "pro",
+  "status": "active",
+  "modules": {
+    "members": true,
+    "attendance": true,
+    "payments": true,
+    "memberships": true,
+    "reports": true,
+    "tasks": true,
+    "targets": true,
+    "promotions": true,
+    "staff": true
+  },
+  "maxMembers": 50,
+  "maxStaff": 3,
+  "settings": {
+    "timezone": "Asia/Kolkata",
+    "currency": "INR",
+    "dateFormat": "DD/MM/YYYY"
+  },
+  "companyId": null,
+  "trialEndsAt": {
+    "$date": "2026-05-18T13:43:16.731Z"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.732Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.025Z"
+  },
+  "__v": 0,
+  "ownerId": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f1a04"
+  },
+  "name": "IronPump Fitness",
+  "slug": "ironpump-fitness",
+  "email": "hello@ironpump.in",
+  "phone": "0265-2222888",
+  "address": "Sayaji Park Road",
+  "city": "Vadodara",
+  "state": "Gujarat",
+  "established": "2026",
+  "logo": null,
+  "plan": "trial",
+  "status": "trial",
+  "trialEndsAt": {
+    "$date": "2026-05-18T13:43:19.139Z"
+  },
+  "modules": {
+    "members": true,
+    "attendance": true,
+    "payments": true,
+    "memberships": true,
+    "reports": false,
+    "tasks": false,
+    "targets": false,
+    "promotions": false,
+    "staff": false
+  },
+  "maxMembers": 50,
+  "maxStaff": 3,
+  "settings": {
+    "timezone": "Asia/Kolkata",
+    "currency": "INR",
+    "dateFormat": "DD/MM/YYYY"
+  },
+  "companyId": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:19.147Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.441Z"
+  },
+  "__v": 0,
+  "ownerId": {
+    "$oid": "69f8a277bf347ccd861f1a06"
+  }
+}]

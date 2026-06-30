@@ -1,0 +1,2 @@
+# Ensures backend/uploads/staff-documents/ exists at boot.
+# Generated files (PDFs/images) are intentionally not committed.

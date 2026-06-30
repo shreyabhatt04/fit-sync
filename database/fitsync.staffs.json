@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19d8"
+  },
+  "name": "Karan Joshi",
+  "email": "karan.joshi@powerhousegym.com",
+  "phone": "9876543300",
+  "role": "manager",
+  "permissions": [
+    "Dashboard",
+    "Customers",
+    "Attendance",
+    "Subscriptions",
+    "Payments",
+    "Memberships",
+    "Reports"
+  ],
+  "isActive": true,
+  "user": {
+    "$oid": "69f8a275bf347ccd861f19d6"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.663Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19dc"
+  },
+  "name": "Rina Iyer",
+  "email": "rina.iyer@powerhousegym.com",
+  "phone": "9876543301",
+  "role": "trainer",
+  "permissions": [
+    "Dashboard",
+    "Customers",
+    "Attendance"
+  ],
+  "isActive": true,
+  "user": {
+    "$oid": "69f8a275bf347ccd861f19da"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.956Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19e0"
+  },
+  "name": "Saurabh Pandya",
+  "email": "saurabh.pandya@fitzone.in",
+  "phone": "9876543310",
+  "role": "manager",
+  "permissions": [
+    "Dashboard",
+    "Customers",
+    "Attendance",
+    "Subscriptions",
+    "Payments",
+    "Memberships",
+    "Reports",
+    "Enquiries"
+  ],
+  "isActive": true,
+  "user": {
+    "$oid": "69f8a275bf347ccd861f19de"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.249Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19e4"
+  },
+  "name": "Pooja Nair",
+  "email": "pooja.nair@fitzone.in",
+  "phone": "9876543311",
+  "role": "trainer",
+  "permissions": [
+    "Dashboard",
+    "Customers",
+    "Attendance"
+  ],
+  "isActive": true,
+  "user": {
+    "$oid": "69f8a276bf347ccd861f19e2"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.543Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.543Z"
+  },
+  "__v": 0
+}]

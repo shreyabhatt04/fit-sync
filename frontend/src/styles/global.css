@@ -1,0 +1,2214 @@
+/* ============================================================
+   FITSYNC — GLOBAL CSS
+   Theme   : Light app + dark landing, teal accent (#10B981)
+   Fonts   : Bebas Neue (display headings) + Inter (body)
+   Palette : Monochrome base + teal accent for CTAs and highlights
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── CSS Variables ──────────────────────────────────────────── */
+:root {
+    /* ── Monochrome Palette ── */
+    --black: #000000;
+    --gray-950: #0a0a0a;
+    --gray-900: #111111;
+    --gray-800: #1a1a1a;
+    --gray-750: #222222;
+    --gray-700: #2d2d2d;
+    --gray-600: #404040;
+    --gray-500: #5c5c5c;
+    --gray-400: #808080;
+    --gray-300: #a3a3a3;
+    --gray-200: #c8c8c8;
+    --gray-150: #d8d8d8;
+    --gray-100: #e8e8e8;
+    --gray-50: #f2f2f2;
+    --gray-25: #f8f8f8;
+    --white: #ffffff;
+
+    /* ── Teal accent (brand color) ── */
+    --teal-950: #022c22;
+    --teal-900: #064e3b;
+    --teal-800: #065f46;
+    --teal-700: #047857;
+    --teal-600: #059669;
+    --teal-500: #10b981;   /* ← primary brand color */
+    --teal-400: #34d399;
+    --teal-300: #6ee7b7;
+    --teal-200: #a7f3d0;
+    --teal-100: #d1fae5;
+    --teal-50:  #ecfdf5;
+
+    /* ── App backgrounds ── */
+    --bg-page: var(--gray-25);
+    --bg-card: var(--white);
+    --bg-card-solid: var(--white);
+    --bg-secondary: var(--gray-50);
+    --bg-hover: var(--gray-50);
+
+    /* ── Text ── */
+    --text-primary: var(--gray-900);
+    --text-secondary: var(--gray-600);
+    --text-muted: var(--gray-400);
+    --text-white: var(--white);
+
+    /* ── Borders ── */
+    --border: var(--gray-100);
+    --border-dark: var(--gray-200);
+
+    /* ── Sidebar (stays dark — subtle teal for active item) ── */
+    --sidebar-bg: var(--gray-900);
+    --sidebar-border: rgba(255, 255, 255, 0.07);
+    --sidebar-text: var(--gray-400);
+    --sidebar-text-active: var(--white);
+    --sidebar-hover-bg: rgba(255, 255, 255, 0.06);
+    --sidebar-active-bg: rgba(16, 185, 129, 0.14);   /* teal at 14% */
+    --sidebar-active-accent: var(--teal-500);        /* for the left-border strip */
+    --sidebar-width: 250px;
+    --sidebar-collapsed-width: 70px;
+
+    /* ── Semantic "primary" now maps to teal ── */
+    --primary: var(--teal-500);
+    --primary-dark: var(--teal-600);
+    --primary-darker: var(--teal-700);
+    --primary-light: var(--teal-50);
+    --primary-muted: rgba(16, 185, 129, 0.1);
+    --primary-hover: var(--teal-600);
+
+    /* Legacy alias — some pages set color:'var(--primary)' expecting dark */
+    --primary-text: var(--teal-700);
+
+    /* ── Status colours (aligned to new palette) ── */
+    --success: var(--teal-600);
+    --success-light: var(--teal-50);
+    --success-text: var(--teal-800);
+    --warning: #92610a;
+    --warning-light: #fdf8ee;
+    --warning-text: #7a500a;
+    --danger: #c0261e;
+    --danger-light: #fff0ef;
+    --danger-text: #a01f18;
+    --info: #1a5fa8;
+    --info-light: #eef4fc;
+    --info-text: #174f8c;
+    --purple: #5b3ab5;
+    --purple-light: #f3f0fb;
+    --purple-text: #4a2f99;
+    --orange: #c05b10;
+    --orange-light: #fef3e8;
+    --orange-text: #a04a0c;
+
+    /* ── Shadows ── */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 20px 56px rgba(0, 0, 0, 0.14), 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-teal: 0 6px 20px rgba(16, 185, 129, 0.28);
+    --shadow-teal-sm: 0 2px 8px rgba(16, 185, 129, 0.22);
+    --glow: 0 0 20px rgba(16, 185, 129, 0.28);
+    --glow-lg: 0 0 60px rgba(16, 185, 129, 0.4);
+
+    /* ── Border radius ── */
+    --radius-sm: 4px;
+    --radius: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+
+    /* ── Transitions ── */
+    --transition: all 0.15s ease;
+    --transition-slow: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* ── Layout ── */
+    --header-height: 60px;
+
+    /* ── Fonts ──
+       Bebas Neue  → headings/display (all-caps impact)
+       Inter       → body, UI, labels (clean & legible)
+    ── */
+    --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-body);
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input,
+textarea,
+select {
+    font-family: var(--font-body);
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-50);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-200);
+    border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-300);
+}
+
+/* ── Utility ───────────────────────────────────────────────── */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-4 {
+    gap: 4px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+/* ── Page Layout ───────────────────────────────────────────── */
+.page-content {
+    padding: 32px 32px 48px;
+    min-height: calc(100vh - var(--header-height));
+    background: var(--bg-page);
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.page-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+/* ── Card ──────────────────────────────────────────────────── */
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--border-dark);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* Elevated card variant */
+.card--elevated {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.card--elevated:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.card-header,
+.card-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.1px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.card-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+.card-link:hover {
+    color: var(--teal-700);
+    border-color: var(--teal-500);
+}
+
+/* ── Badges ────────────────────────────────────────────────── */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 9px;
+    border-radius: var(--radius-full);
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+}
+
+.badge-success {
+    background: var(--success-light);
+    color: var(--success-text);
+}
+
+.badge-warning {
+    background: var(--warning-light);
+    color: var(--warning-text);
+}
+
+.badge-danger {
+    background: var(--danger-light);
+    color: var(--danger-text);
+}
+
+.badge-info {
+    background: var(--info-light);
+    color: var(--info-text);
+}
+
+.badge-purple {
+    background: var(--purple-light);
+    color: var(--purple-text);
+}
+
+.badge-orange {
+    background: var(--orange-light);
+    color: var(--orange-text);
+}
+
+.badge-gray {
+    background: var(--gray-50);
+    color: var(--gray-600);
+    border: 1px solid var(--border);
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    line-height: 1;
+}
+
+.btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: var(--teal-500);
+    color: var(--white);
+    border-color: var(--teal-500);
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: var(--teal-600);
+    border-color: var(--teal-600);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-teal);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--text-secondary);
+    border-color: var(--border-dark);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: var(--gray-50);
+    color: var(--text-primary);
+    border-color: var(--gray-300);
+}
+
+.btn-danger {
+    background: var(--danger-light);
+    color: var(--danger-text);
+    border-color: #fecaca;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+
+.btn-success {
+    background: var(--success-light);
+    color: var(--success-text);
+    border-color: #bbf7d0;
+}
+
+.btn-success:hover:not(:disabled) {
+    background: #dcfce7;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-secondary);
+    border-color: var(--border-dark);
+}
+
+.btn-outline:hover:not(:disabled) {
+    color: var(--text-primary);
+    border-color: var(--gray-300);
+    background: var(--gray-50);
+}
+
+.btn-sm {
+    padding: 5px 11px;
+    font-size: 12.5px;
+}
+
+.btn-lg {
+    padding: 11px 24px;
+    font-size: 14.5px;
+}
+
+.btn-icon {
+    padding: 6px;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon:hover {
+    background: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+
+.btn-icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* ── Form Elements ─────────────────────────────────────────── */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border-dark);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: var(--text-primary);
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: var(--teal-500);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+    outline: none;
+}
+
+.input-error {
+    border-color: var(--danger) !important;
+}
+
+.input-error:focus {
+    box-shadow: 0 0 0 3px rgba(192, 38, 30, 0.10) !important;
+}
+
+.form-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23a3a3a3' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-color: var(--white);
+    padding-right: 36px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+    line-height: 1.6;
+}
+
+.form-error {
+    font-size: 12px;
+    color: var(--danger-text);
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--gray-900);
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.input-password-wrapper {
+    position: relative;
+}
+
+.input-password-wrapper .form-input {
+    padding-right: 42px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.password-toggle:hover {
+    color: var(--text-secondary);
+}
+
+.password-toggle svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ── Table ─────────────────────────────────────────────────── */
+.table-container {
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+}
+
+thead {
+    background: var(--gray-25);
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    padding: 11px 16px;
+    text-align: left;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+td {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    vertical-align: middle;
+    font-size: 13.5px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr {
+    transition: background 0.12s ease;
+}
+
+tbody tr:hover {
+    background: var(--gray-25);
+}
+
+/* ── Avatar ────────────────────────────────────────────────── */
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    background: var(--gray-100);
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    letter-spacing: 0.03em;
+    border: 1px solid var(--border-dark);
+}
+
+.avatar-sm {
+    width: 28px;
+    height: 28px;
+    font-size: 10.5px;
+}
+
+.avatar-lg {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+}
+
+/* ── Search & Filter Bar ───────────────────────────────────── */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-input-wrapper {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-input-wrapper svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    color: var(--text-muted);
+}
+
+.search-input {
+    width: 100%;
+    padding: 9px 12px 9px 34px;
+    border: 1px solid var(--border-dark);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    color: var(--text-primary);
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-input:focus {
+    border-color: var(--gray-600);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
+    outline: none;
+}
+
+/* ── Pagination ────────────────────────────────────────────── */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 16px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--text-muted);
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.pagination-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.pagination-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+
+.pagination-btn.active {
+    background: var(--gray-900);
+    color: var(--white);
+    border-color: var(--gray-900);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* ── Modal ─────────────────────────────────────────────────── */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+    animation: fadeIn 0.15s ease;
+}
+
+.modal {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.modal-lg {
+    max-width: 720px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    background: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+
+.modal-body {
+    padding: 22px;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 14px 22px;
+    border-top: 1px solid var(--border);
+    background: var(--gray-25);
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+/* ── Tabs ──────────────────────────────────────────────────── */
+.tabs {
+    display: flex;
+    gap: 2px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 16px;
+    font-family: var(--font-body);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: var(--transition);
+    margin-bottom: -1px;
+    letter-spacing: 0.01em;
+}
+
+.tab-btn:hover {
+    color: var(--text-secondary);
+}
+
+.tab-btn.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--gray-900);
+}
+
+/* ── Alert ─────────────────────────────────────────────────── */
+.alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: var(--radius);
+    font-size: 13.5px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.alert svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.alert-danger {
+    background: var(--danger-light);
+    color: var(--danger-text);
+    border-color: #fecaca;
+}
+
+.alert-success {
+    background: var(--success-light);
+    color: var(--success-text);
+    border-color: #bbf7d0;
+}
+
+.alert-warning {
+    background: var(--warning-light);
+    color: var(--warning-text);
+    border-color: #fde68a;
+}
+
+.alert-info {
+    background: var(--info-light);
+    color: var(--info-text);
+    border-color: #bae6fd;
+}
+
+/* ── Spinner (teal ring) ───────────────────────────────────── */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(16, 185, 129, 0.15);
+    border-top-color: var(--teal-500);
+    border-radius: 50%;
+    animation: spin 0.65s linear infinite;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* Size variants */
+.spinner-sm { width: 14px; height: 14px; border-width: 1.5px; }
+.spinner-lg { width: 36px; height: 36px; border-width: 3px; }
+.spinner-xl { width: 56px; height: 56px; border-width: 3.5px; }
+
+/* White spinner — for inside dark buttons */
+.spinner-white {
+    border-color: rgba(255, 255, 255, 0.25);
+    border-top-color: #ffffff;
+}
+
+/* ── Page loader — for full-page data loading ────────────────
+   Usage: <div className="page-loader"><div className="spinner spinner-xl" /><p>Loading...</p></div> */
+.page-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 320px;
+    padding: 60px 24px;
+    color: var(--text-muted);
+}
+
+.page-loader p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    animation: lpPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes lpPulse {
+    0%, 100% { opacity: 0.5; }
+    50%      { opacity: 1; }
+}
+
+/* ── Inline/row loader — for tables + lists ──────────────────
+   Usage: <tr><td colSpan="5"><div className="row-loader"><div className="spinner" /></div></td></tr> */
+.row-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    gap: 10px;
+    color: var(--text-muted);
+}
+
+.row-loader p {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ── Skeleton loader — shimmer placeholder boxes ─────────────
+   Usage: <div className="skeleton" style={{ width: '100%', height: 16 }} /> */
+.skeleton {
+    display: block;
+    background: linear-gradient(
+        90deg,
+        var(--gray-50) 0%,
+        var(--gray-100) 50%,
+        var(--gray-50) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeletonShimmer 1.6s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+}
+
+@keyframes skeletonShimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.skeleton-text { height: 14px; margin-bottom: 6px; }
+.skeleton-text:last-child { margin-bottom: 0; }
+.skeleton-title { height: 24px; width: 60%; margin-bottom: 10px; }
+.skeleton-line { height: 14px; width: 100%; }
+.skeleton-line.short { width: 40%; }
+.skeleton-line.medium { width: 70%; }
+.skeleton-circle {
+    border-radius: 50%;
+    display: inline-block;
+}
+.skeleton-card {
+    padding: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+/* Skeleton row — drops into an existing <tr> for table loading states */
+.skeleton-row td {
+    padding: 14px 12px !important;
+}
+.skeleton-row .skeleton {
+    height: 14px;
+}
+
+/* ── Loading overlay — dims content while it refreshes ───────
+   Usage: wrap parent with position:relative, add overlay inside */
+.loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border-radius: inherit;
+    animation: lpFadeInQuick 0.15s ease;
+}
+
+@keyframes lpFadeInQuick {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ── Empty State (polished, teal-accented) ─────────────────── */
+.empty-state {
+    text-align: center;
+    padding: 56px 24px;
+    color: var(--text-muted);
+}
+
+/* Icon sits in a soft circular teal halo */
+.empty-state svg {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 18px;
+    opacity: 1;
+    color: var(--teal-500);
+    padding: 18px;
+    box-sizing: content-box;
+    background: linear-gradient(135deg, var(--teal-50) 0%, #ffffff 100%);
+    border: 1px solid var(--teal-100);
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(16, 185, 129, 0.08);
+}
+
+.empty-state h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.empty-state p {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    max-width: 360px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* Optional CTA button inside empty state */
+.empty-state .btn {
+    margin-top: 4px;
+}
+
+/* Compact variant for small spaces (inside cards, narrow columns) */
+.empty-state-sm {
+    padding: 28px 16px;
+}
+.empty-state-sm svg {
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.empty-state-sm h3 { font-size: 16px; margin-bottom: 4px; }
+.empty-state-sm p  { font-size: 12.5px; }
+
+/* ── Divider ───────────────────────────────────────────────── */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 16px 0;
+}
+
+/* ── Action buttons / Member cell ─────────────────────────── */
+.action-btns {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.member-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.member-cell-name {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.member-cell-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 1px;
+}
+
+/* ── Animations ────────────────────────────────────────────── */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .page-content {
+        padding: 20px 20px 32px;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+/* ============================================================
+   ErrorBanner — inline error/warning/info banner for pages
+============================================================ */
+.error-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.error-banner-error {
+    background: #fff0ef;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+.error-banner-warning {
+    background: #fef3c7;
+    color: #92400e;
+    border-color: #fde68a;
+}
+.error-banner-info {
+    background: #eff6ff;
+    color: #1e40af;
+    border-color: #bfdbfe;
+}
+
+.error-banner-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+.error-banner-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.error-banner-text {
+    flex: 1;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.error-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.error-banner-btn {
+    background: rgba(0, 0, 0, 0.08);
+    border: none;
+    color: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+.error-banner-btn:hover {
+    background: rgba(0, 0, 0, 0.14);
+}
+
+.error-banner-close {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    opacity: 0.7;
+    transition: opacity 0.15s ease, background 0.15s ease;
+}
+.error-banner-close:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.06);
+}
+.error-banner-close svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* ============================================================
+   ErrorBoundary — full-page fallback when React crashes
+============================================================ */
+.error-boundary-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg-page);
+}
+
+.error-boundary-card {
+    max-width: 480px;
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.error-boundary-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff0ef;
+    color: #dc2626;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-boundary-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.error-boundary-card h1 {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.error-boundary-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+.error-boundary-details {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 12px;
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+}
+.error-boundary-details summary {
+    cursor: pointer;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 12px;
+}
+.error-boundary-details pre {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: 'ui-monospace', 'SFMono-Regular', Menlo, monospace;
+    font-size: 11.5px;
+}
+
+.error-boundary-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BATCH 8b-5 — GLOBAL MOBILE RULES
+   Tables scroll horizontally, modals go full-screen,
+   form grids collapse, page headers stack.
+═══════════════════════════════════════════════════════════ */
+
+/* ── TABLES — horizontal scroll on mobile ── */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        /* Note: an earlier version of this rule used negative margins
+           plus inner padding (margin: 0 -16px; padding: 0 16px) to
+           break out of the card. That trick can interfere with scroll
+           hit-testing in some browsers — dropped in favour of a plain
+           scrollable container that respects card padding. */
+    }
+    .table-container table {
+        min-width: 640px;          /* ensure columns don't crush; scroll kicks in */
+    }
+    .table-container th,
+    .table-container td {
+        white-space: nowrap;
+    }
+}
+
+/* ── MODALS — full-screen sheet on phone ── */
+@media (max-width: 600px) {
+    .modal-overlay {
+        padding: 0;
+        align-items: stretch;
+    }
+    .modal,
+    .modal-lg {
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-header {
+        padding: 14px 16px;
+        flex-shrink: 0;
+        position: sticky;
+        top: 0;
+        background: var(--bg-card, #ffffff);
+        z-index: 1;
+        border-bottom: 1px solid var(--border);
+    }
+    .modal-title {
+        font-size: 16px;
+    }
+    .modal-body {
+        padding: 16px;
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .modal-footer {
+        padding: 12px 16px;
+        flex-shrink: 0;
+        position: sticky;
+        bottom: 0;
+        background: var(--bg-card, #ffffff);
+        border-top: 1px solid var(--border);
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+    .modal-footer .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+}
+
+/* ── FORMS — collapse multi-col grids ── */
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+        font-size: 16px !important;   /* prevents iOS zoom on focus */
+    }
+    .form-group {
+        margin-bottom: 14px;
+    }
+}
+
+/* ── PAGE HEADERS — title above actions on mobile ── */
+@media (max-width: 600px) {
+    .page-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    .page-header h1,
+    .page-header .page-title {
+        font-size: 22px;
+    }
+    .page-header-actions {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .page-header-actions .btn {
+        flex: 1 1 auto;
+        min-width: 0;
+        justify-content: center;
+    }
+}
+
+/* ── FILTERS bar — wrap items, full width on mobile ── */
+@media (max-width: 600px) {
+    .filters,
+    .filter-bar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .filters .form-input,
+    .filters .form-select,
+    .filter-bar .form-input,
+    .filter-bar .form-select {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+/* ── STATS cards — 2-col on small, 1-col on tiny ── */
+@media (max-width: 768px) {
+    .stat-cards-grid,
+    .stats-grid,
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .stat-cards-grid,
+    .stats-grid,
+    .dashboard-stats {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ── EMPTY STATE compact on mobile ── */
+@media (max-width: 600px) {
+    .empty-state {
+        padding: 36px 16px;
+    }
+    .empty-state svg {
+        width: 36px;
+        height: 36px;
+        padding: 14px;
+    }
+    .empty-state h3 {
+        font-size: 17px;
+    }
+    .empty-state p {
+        font-size: 13px;
+    }
+}
+
+/* ── CARD padding tighter on mobile ── */
+@media (max-width: 600px) {
+    .card {
+        padding: 16px;
+        border-radius: 10px;
+    }
+}
+
+/* ── PAGINATION — wrap, smaller buttons ── */
+@media (max-width: 480px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+    .pagination-btn {
+        min-width: 32px;
+        height: 32px;
+        font-size: 12.5px;
+    }
+}
+
+/* ── HEADER DROPDOWNS (notifications, profile) — wider on mobile ── */
+@media (max-width: 600px) {
+    .header-dropdown {
+        width: calc(100vw - 24px);
+        right: -10px;
+        max-width: 360px;
+    }
+}
+
+/* ── CONTENT padding tighter on phones ── */
+@media (max-width: 600px) {
+    .admin-content,
+    .customer-content,
+    .sa-content {
+        padding: 16px !important;
+    }
+}
+
+/* ── SCROLLBAR on touch devices ── */
+@media (hover: none) and (pointer: coarse) {
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BATCH 9a — REUSABLE TOGGLE SWITCH
+   iOS-style pill switch. Use anywhere:
+     <span className={`toggle-switch ${on ? 'toggle-switch--on' : ''}`}>
+       <span className="toggle-switch__thumb" />
+     </span>
+═══════════════════════════════════════════════════════════ */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    background: var(--gray-200, #c8c8c8);
+    border-radius: 999px;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.toggle-switch__thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease;
+}
+.toggle-switch--on {
+    background: var(--teal-500, #10b981);
+}
+.toggle-switch--on .toggle-switch__thumb {
+    transform: translateX(20px);
+    box-shadow: 0 1px 4px rgba(16, 185, 129, 0.5);
+}
+.toggle-switch--sm {
+    width: 36px;
+    height: 20px;
+}
+.toggle-switch--sm .toggle-switch__thumb {
+    width: 16px;
+    height: 16px;
+}
+.toggle-switch--sm.toggle-switch--on .toggle-switch__thumb {
+    transform: translateX(16px);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BATCH 9a — UI SIZE IMPROVEMENTS (guide feedback #13)
+   Bump body font 14 → 15px (browser default is 16 but Inter
+   reads well at 15; 16 would require reflowing every table).
+   Larger card padding, more breathing room, taller inputs.
+═══════════════════════════════════════════════════════════ */
+
+/* Body baseline size up */
+body {
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+/* Cards — roomier */
+.card {
+    padding: 24px;
+    border-radius: 12px;
+}
+@media (max-width: 600px) {
+    .card { padding: 18px; }
+}
+
+/* Card headers */
+.card-header {
+    margin-bottom: 16px;
+}
+.card-title {
+    font-size: 16px;
+}
+
+/* Form inputs — taller, slightly bigger text */
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 10px 13px;
+    font-size: 14px;
+}
+.form-label {
+    font-size: 13.5px;
+    margin-bottom: 6px;
+}
+
+/* Buttons — slightly taller default */
+.btn {
+    padding: 9px 18px;
+    font-size: 14px;
+}
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12.5px;
+}
+
+/* Tables — taller rows, easier to read */
+table {
+    font-size: 14px;
+}
+th {
+    padding: 12px 14px;
+    font-size: 12px;
+}
+td {
+    padding: 14px 14px;
+}
+
+/* Section headings — more visible */
+h2, .h2 {
+    font-size: 22px;
+    line-height: 1.25;
+}
+h3, .h3 {
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+/* Page header spacing */
+.page-header {
+    margin-bottom: 24px;
+}
+.page-title {
+    font-size: 24px;
+}
+
+/* Stat cards — bigger numbers, more breathing room */
+.stat-card {
+    padding: 22px;
+}
+.stat-card-value,
+.stat-value {
+    font-size: 32px;
+}
+.stat-card-label,
+.stat-label {
+    font-size: 13px;
+}
+
+/* Badges — slight bump so they're scannable */
+.badge {
+    font-size: 12px;
+    padding: 3px 10px;
+}
+
+/* Modal body a touch more padding */
+.modal-body {
+    padding: 22px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 18 — MOBILE RESPONSIVENESS FOUNDATION
+   ───────────────────────────────────────────────────────────────
+   Targets: phones from 360px upward.
+   Strategy:
+     1. Block horizontal page scroll (the root cause of "cropped"
+        cards in screenshots — when a wide table or grid overflows
+        viewport width, the whole page scrolls horizontally and
+        every other card looks shifted).
+     2. Make tables scroll inside their card container, not the
+        whole page (overflow-x: auto on the wrapper).
+     3. Force stat-card grids to 2-up at <= 600px and 1-up at
+        very narrow widths, so cards never get crushed.
+     4. Shrink stat-card fonts on phones so values don't visually
+        crop at 320–400px viewports.
+     5. Collapse the in-page form grids that escaped .form-row
+        (the ones using inline gridTemplateColumns).
+   ═══════════════════════════════════════════════════════════ */
+
+/* 1. Stop horizontal page scroll. Anything wider than viewport
+   should be handled by its own wrapper (typically .table-container
+   below). The rare exception (chart with min-width) is handled
+   per-component. */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Defensive: many SVGs and images leak past their container if
+   not given explicit max-width. Cheap insurance. */
+img, svg, video, canvas, iframe {
+    max-width: 100%;
+}
+
+/* 2. Table containers — every list page wraps its <table> in
+   .table-container (or .data-table-wrap). Make sure the wrapper
+   handles the horizontal overflow rather than letting the page
+   scroll. */
+.table-container,
+.data-table-wrap,
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* On mobile-emulated viewports browsers often hide scrollbars by
+   default (they only appear during scroll). Many users don't
+   realise the table is scrollable. Force a thin always-visible
+   scrollbar on phone widths so scroll affordance is obvious. */
+@media (max-width: 768px) {
+    .table-container,
+    .data-table-wrap,
+    .table-wrap {
+        scrollbar-width: thin;            /* Firefox */
+    }
+    .table-container::-webkit-scrollbar,
+    .data-table-wrap::-webkit-scrollbar,
+    .table-wrap::-webkit-scrollbar {
+        height: 6px;
+    }
+    .table-container::-webkit-scrollbar-thumb,
+    .data-table-wrap::-webkit-scrollbar-thumb,
+    .table-wrap::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 3px;
+    }
+}
+
+/* Tables themselves: keep cells from getting unreadably narrow.
+   With overflow-x on the wrapper, this lets the table scroll
+   sideways rather than wrap into illegible columns. */
+@media (max-width: 768px) {
+    .table-container table,
+    .data-table-wrap table,
+    .table-wrap table {
+        min-width: 600px;
+    }
+}
+
+/* 3 & 4. Phone-tier breakpoint (phones in portrait) */
+@media (max-width: 600px) {
+    /* Stat / metric grids — collapse from 4 → 2 cols. Most
+       dashboards have a `.stats-grid` or `.stat-grid`. */
+    .stats-grid,
+    .stat-grid,
+    .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    /* Stat card — shrink padding + font so 2-up actually fits
+       without value cropping at 360–400px. */
+    .stat-card {
+        padding: 16px 14px 14px !important;
+    }
+    .stat-card-value {
+        font-size: 22px !important;
+        letter-spacing: 0 !important;
+    }
+    .stat-card-title {
+        font-size: 9.5px !important;
+        letter-spacing: 0.06em !important;
+    }
+    .stat-card-subtitle {
+        font-size: 11px !important;
+    }
+
+    /* Generic card container — kill outer padding-driven overflow */
+    .card {
+        padding: 16px !important;
+    }
+    /* Some forms render dense card-in-card; keep nested padding tighter */
+    .card .card { padding: 12px !important; }
+
+    /* page-content shrinks more at this tier (was 20px from 768px) */
+    .page-content {
+        padding: 16px 14px 32px !important;
+    }
+}
+
+/* 5. Very-narrow phones (small Androids, iPhone SE 1st gen ~320px) */
+@media (max-width: 420px) {
+    /* Stack stat cards 1-up — at this width 2 cols crushes content */
+    .stats-grid,
+    .stat-grid,
+    .metric-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Table min-width comes down — accept some cramping over
+       tiny illegible cells. */
+    .table-container table,
+    .data-table-wrap table,
+    .table-wrap table {
+        min-width: 520px;
+    }
+
+    /* Page title gets smaller — avoids 2-line wrap for short titles */
+    .page-title,
+    .page-header h1 {
+        font-size: 20px !important;
+    }
+    .page-subtitle {
+        font-size: 13px !important;
+    }
+}
+
+/* ── Inline-grid escape hatch ───────────────────────────────────
+   Some pages have inline `style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}`
+   or 3-col / 4-col variants. We can't override inline styles with
+   pure CSS without !important on a more specific selector — so we
+   target the parent `.card` or `.modal-body` and reset any direct
+   grid child to 1fr at phone widths. This catches the inline-grid
+   forms in MyBusiness, Settings, UserPermissions, etc. */
+@media (max-width: 600px) {
+    .card > div[style*="grid-template-columns"],
+    .card > div[style*="gridTemplateColumns"],
+    .modal-body > div[style*="grid-template-columns"],
+    .modal-body > div[style*="gridTemplateColumns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Named form grids that exist in component CSS files. Adding
+       them here too as a safety net — if a component CSS rule is
+       being shadowed for any reason (build cache, file not loaded),
+       this catches it. */
+    .add-customer-grid,
+    .detail-grid,
+    .form-row,
+    .form-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+}
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 18.2 — DEEP FIX: cards growing wider than viewport
+   ───────────────────────────────────────────────────────────────
+   Diagnosis (from devtools): on a 400px viewport the .card
+   element measured 521×325, exceeding the viewport. The cause is
+   CSS Grid's default `1fr` track which is internally `minmax(auto,
+   1fr)` — the track's minimum is the content's intrinsic width.
+   When the card contains a table with white-space: nowrap cells,
+   the table's min-content is its rendered width (~520px), so the
+   track refuses to shrink below 520px regardless of available
+   space. The card sized to its track and overflowed the viewport.
+
+   The fix is to force every grid track to ignore content
+   min-content (use `minmax(0, 1fr)`) AND let cards shrink below
+   their content (`min-width: 0` on flex/grid items). Then the
+   table's overflow-x: auto can actually engage because the card
+   stops growing past its allocated space.
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+    /* Stop grid tracks from sizing to their content's min-width.
+       This is the single most important rule in this batch. */
+    .dashboard-row,
+    .stats-grid,
+    .stat-grid,
+    .metric-grid,
+    .dashboard,
+    .page-content > div[class*="grid"],
+    .form-row,
+    .add-customer-grid,
+    .detail-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    /* Also for any flex container that might constrain children */
+    .card,
+    .table-container,
+    .data-table-wrap,
+    .table-wrap {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Belt: hard cap on card width so even if a parent misbehaves,
+       the card itself stops growing past viewport. */
+    .card {
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Recheck at narrower tier — same rules but stricter */
+    .dashboard-row,
+    .stats-grid,
+    .stat-grid,
+    .metric-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
+
+/* For viewports where stat-grid SHOULD be 2-up (600px-and-down),
+   override the all-1-col rule above with the 2-col rule. Specificity
+   of (max-width: 600px) is the same so source order wins; this rule
+   is below the 1-col rule so it wins. */
+@media (max-width: 600px) {
+    .stats-grid,
+    .stat-grid,
+    .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+@media (max-width: 420px) {
+    .stats-grid,
+    .stat-grid,
+    .metric-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 19 — TABLE POLISH ACROSS LIST PAGES
+   ───────────────────────────────────────────────────────────────
+   1. Catch any remaining tables that use inline
+      `style={{ overflowX: 'auto' }}` instead of .table-container
+      class. The CSS attribute selector matches the inline style
+      string, applying the same mobile constraints we have for
+      .table-container.
+   2. Add a subtle right-edge fade hint at narrow widths so users
+      know the table has more content to swipe to. Pure CSS, no
+      JS scroll listeners.
+   ═══════════════════════════════════════════════════════════ */
+
+/* 1. Inline-style fallback. Any div with overflowX:auto in inline
+   style + a direct table child gets treated like .table-container
+   on mobile. This catches Reports.jsx legacy patterns and any
+   future component that forgets the class. */
+@media (max-width: 768px) {
+    div[style*="overflowX: 'auto'"],
+    div[style*="overflowX:'auto'"],
+    div[style*="overflow-x: auto"],
+    div[style*="overflow-x:auto"] {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+/* 2. Swipe-hint gradient on the right edge of any table-container
+   that's actually overflowing. Uses ::after (positioned absolute)
+   so it doesn't interfere with scroll mechanics — unlike the
+   sticky pseudo-element that was removed in batch 18.1, this one
+   is on the WRAPPER (positioned relative), not inside the scroll
+   area. */
+@media (max-width: 600px) {
+    .table-container {
+        position: relative;
+    }
+    .table-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 8px;          /* sit above the scrollbar */
+        width: 18px;
+        background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.06));
+        pointer-events: none;
+        border-top-right-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+}
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 21 — FINAL MOBILE EDGE CASES
+   ───────────────────────────────────────────────────────────────
+   Fixes from user-reported issues at 400×581 viewport:
+     1. Action icons in tables too small to tap
+     2. Stat cards overflowing their grid cells
+     3. Modals feel cramped (cancel button at edge)
+     4. Form labels visibly wrapping awkwardly because grid not
+        collapsing — extra-specific override as last resort
+     5. Customer-stats-grid doesn't show 3rd card (handled in
+        MyPayments.jsx by removing inline override)
+   ═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+    /* 1. Bigger action icons. The .btn-icon default is 15×15 with
+       6px padding (27×27 hit area) — too small for fingers on
+       mobile. Bump to 18×18 with 10px padding (38×38 hit area). */
+    .btn-icon {
+        padding: 10px !important;
+    }
+    .btn-icon svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    /* Action button row gets a touch more breathing room */
+    .action-btns {
+        gap: 8px;
+    }
+
+    /* 2. Stat cards that overflow their grid cell. The `.stat-card`
+       and customer/superadmin variants need min-width: 0 so flex
+       and grid shrinking work. Also force long values to wrap
+       rather than overflow. */
+    .stat-card,
+    .customer-stat-card,
+    .sa-stat-card {
+        min-width: 0 !important;
+    }
+    .stat-card-value,
+    .customer-stat-value,
+    .sa-stat-value {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* 3. Modals — give them more vertical space on phones. The
+       default 90vh with 20px overlay padding leaves the modal
+       feeling cramped on a 581px-tall viewport. Bump to 95vh
+       and shrink overlay padding. */
+    .modal-overlay {
+        padding: 8px !important;
+    }
+    .modal {
+        max-height: 95vh !important;
+    }
+
+    /* 4. Add-customer / detail / form grids — extra-specific
+       override targeting the parent .card so component CSS can't
+       shadow it. */
+    .card .add-customer-grid,
+    .card .detail-grid,
+    .card .form-row,
+    .card .form-grid,
+    .add-customer-grid,
+    .detail-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    /* Also: form-label shouldn't break inside 'FIRST NAME *' etc. */
+    .form-label {
+        white-space: nowrap;
+    }
+}
+
+/* Very-narrow phones: tighten further. Some users on 360px Androids
+   need extra padding reduction so cards don't visually 'touch' the
+   viewport edges. */
+@media (max-width: 380px) {
+    .modal-overlay {
+        padding: 4px !important;
+    }
+    .modal {
+        max-height: 98vh !important;
+        border-radius: 12px !important;
+    }
+    /* Smaller stat cards still readable on tiny phones */
+    .stat-card-value {
+        font-size: 20px !important;
+    }
+}
+/* ═══════════════════════════════════════════════════════════ */

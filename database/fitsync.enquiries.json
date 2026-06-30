@@ -1,0 +1,154 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18de"
+  },
+  "name": "Riya Shah",
+  "phone": "9876500001",
+  "email": "riya@email.com",
+  "source": "Walk-in",
+  "interestedIn": "Premium",
+  "status": "converted",
+  "notes": "Joined already",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18df"
+  },
+  "name": "Karan Mehta",
+  "phone": "9876500002",
+  "email": "karan@email.com",
+  "source": "Website",
+  "interestedIn": "Standard",
+  "status": "follow-up",
+  "notes": "Will follow up",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e0"
+  },
+  "name": "Nisha Patel",
+  "phone": "9876500003",
+  "email": "nisha@email.com",
+  "source": "Referral",
+  "interestedIn": "Basic",
+  "status": "new",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e1"
+  },
+  "name": "Suresh Kumar",
+  "phone": "9876500004",
+  "email": "suresh@email.com",
+  "source": "Call",
+  "interestedIn": "Premium",
+  "status": "lost",
+  "notes": "Went elsewhere",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.727Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ca"
+  },
+  "name": "Anjali Gupta",
+  "phone": "9876500005",
+  "email": "anjali@email.com",
+  "source": "Walk-in",
+  "interestedIn": "Elite",
+  "status": "converted",
+  "notes": "Annual plan",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19cb"
+  },
+  "name": "Mohit Verma",
+  "phone": "9876500006",
+  "email": "mohit@email.com",
+  "source": "Website",
+  "interestedIn": "Standard",
+  "status": "follow-up",
+  "notes": "Needs time",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19cc"
+  },
+  "name": "Shreya Jain",
+  "phone": "9876500007",
+  "email": "shreya@email.com",
+  "source": "Referral",
+  "interestedIn": "Premium",
+  "status": "new",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.070Z"
+  }
+}]

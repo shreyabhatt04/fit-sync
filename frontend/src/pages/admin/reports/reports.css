@@ -1,0 +1,152 @@
+/* ============================================================
+   REPORTS
+   Theme : Black & White Monochrome
+============================================================ */
+
+.reports-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* ── Sidebar nav ──────────────────────────────────────────── */
+.reports-sidebar {
+    background: var(--white, #ffffff);
+    border: 1px solid var(--border, #e8e8e8);
+    border-radius: var(--radius-lg);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.report-type-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: var(--radius);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: var(--transition);
+    color: var(--text-secondary, #5c5c5c);
+    font-family: var(--font-body);
+    font-size: 13.5px;
+}
+
+.report-type-btn:hover {
+    background: var(--gray-25, #f8f8f8);
+    color: var(--text-primary, #111111);
+}
+
+.report-type-btn.active {
+    background: var(--gray-900, #111111);
+    color: var(--white, #ffffff);
+    font-weight: 600;
+}
+
+.report-type-icon { font-size: 16px; }
+.report-type-label { font-size: 13.5px; font-weight: 500; }
+
+/* ── Content area ─────────────────────────────────────────── */
+.reports-content { min-width: 0; }
+
+.report-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.report-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* ── Summary chips row ────────────────────────────────────── */
+.report-summary-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.report-summary-chip {
+    background: var(--white, #ffffff);
+    border: 1px solid var(--border, #e8e8e8);
+    border-radius: var(--radius-lg);
+    padding: 18px 22px;
+    flex: 1;
+    min-width: 140px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-summary-chip:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-color: var(--border-dark, #d0d0d0);
+}
+
+.report-chip-value {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--text-primary, #111111);
+    margin-bottom: 3px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.report-chip-label {
+    font-size: 12px;
+    color: var(--text-secondary, #5c5c5c);
+    font-weight: 500;
+}
+
+/* ── Progress Bar ─────────────────────────────────────────── */
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--gray-100, #e8e8e8);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    background: var(--gray-800, #1a1a1a);
+    transition: width 0.4s ease;
+}
+
+.progress-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary, #5c5c5c);
+    min-width: 36px;
+    text-align: right;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .reports-layout   { grid-template-columns: 1fr; }
+    .reports-sidebar  { flex-direction: row; flex-wrap: wrap; position: static; }
+    .report-type-btn  { flex: 1; min-width: 140px; justify-content: center; }
+}

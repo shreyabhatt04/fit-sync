@@ -1,0 +1,207 @@
+[{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bcb"
+  },
+  "module": "members",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.139Z"
+  },
+  "description": "Add, manage and track all gym members",
+  "icon": "FaUsers",
+  "isActive": true,
+  "label": "Member Management",
+  "pricing": {
+    "monthly": 199,
+    "quarterly": 499,
+    "yearly": 1499
+  },
+  "sortOrder": 1,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.029Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bcc"
+  },
+  "module": "attendance",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.170Z"
+  },
+  "description": "Daily attendance with calendar view",
+  "icon": "FaCalendarCheck",
+  "isActive": true,
+  "label": "Attendance Tracking",
+  "pricing": {
+    "monthly": 149,
+    "quarterly": 399,
+    "yearly": 999
+  },
+  "sortOrder": 2,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.036Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bcd"
+  },
+  "module": "payments",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.173Z"
+  },
+  "description": "Collect fees, invoices, due payment alerts",
+  "icon": "FaCreditCard",
+  "isActive": true,
+  "label": "Payment Tracking",
+  "pricing": {
+    "monthly": 149,
+    "quarterly": 399,
+    "yearly": 999
+  },
+  "sortOrder": 3,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.037Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bce"
+  },
+  "module": "memberships",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.174Z"
+  },
+  "description": "Create and manage flexible membership plans",
+  "icon": "FaLayerGroup",
+  "isActive": true,
+  "label": "Membership Plans",
+  "pricing": {
+    "monthly": 99,
+    "quarterly": 249,
+    "yearly": 699
+  },
+  "sortOrder": 4,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.039Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bcf"
+  },
+  "module": "reports",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.176Z"
+  },
+  "description": "Financial, client and subscription reports",
+  "icon": "FaChartBar",
+  "isActive": true,
+  "label": "Business Reports",
+  "pricing": {
+    "monthly": 199,
+    "quarterly": 499,
+    "yearly": 1499
+  },
+  "sortOrder": 5,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.040Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bd0"
+  },
+  "module": "tasks",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.177Z"
+  },
+  "description": "Kanban board for gym tasks and to-dos",
+  "icon": "FaTasks",
+  "isActive": true,
+  "label": "Task Manager",
+  "pricing": {
+    "monthly": 99,
+    "quarterly": 249,
+    "yearly": 699
+  },
+  "sortOrder": 6,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.042Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bd1"
+  },
+  "module": "targets",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.178Z"
+  },
+  "description": "Set revenue and member targets with progress",
+  "icon": "FaBullseye",
+  "isActive": true,
+  "label": "Targets & Goals",
+  "pricing": {
+    "monthly": 99,
+    "quarterly": 249,
+    "yearly": 699
+  },
+  "sortOrder": 7,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.043Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bd2"
+  },
+  "module": "promotions",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.179Z"
+  },
+  "description": "Send promotional emails to members",
+  "icon": "FaEnvelope",
+  "isActive": true,
+  "label": "Email Promotions",
+  "pricing": {
+    "monthly": 149,
+    "quarterly": 399,
+    "yearly": 999
+  },
+  "sortOrder": 8,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.044Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e520f120628a3fa3949bd3"
+  },
+  "module": "staff",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-04-19T18:37:37.180Z"
+  },
+  "description": "Manage gym staff accounts and permissions",
+  "icon": "FaUserTie",
+  "isActive": true,
+  "label": "Staff Management",
+  "pricing": {
+    "monthly": 149,
+    "quarterly": 399,
+    "yearly": 999
+  },
+  "sortOrder": 9,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.045Z"
+  }
+}]

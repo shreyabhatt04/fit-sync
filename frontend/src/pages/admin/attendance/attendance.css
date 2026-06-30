@@ -1,0 +1,114 @@
+.attendance-view-toggle {
+    display: flex;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 3px;
+    gap: 2px;
+}
+
+.toggle-btn {
+    padding: 7px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.toggle-btn.active {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.attendance-controls {
+    margin-bottom: 16px;
+}
+
+.attendance-summary {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.attendance-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+}
+
+.attendance-summary-item.present {
+    background: var(--success-light);
+}
+
+.attendance-summary-item.absent {
+    background: var(--danger-light);
+}
+
+.attendance-summary-item.total {
+    background: var(--bg-secondary);
+}
+
+.att-count {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.attendance-summary-item.present .att-count {
+    color: var(--success-text);
+}
+
+.attendance-summary-item.absent .att-count {
+    color: var(--danger-text);
+}
+
+.attendance-summary-item.total .att-count {
+    color: var(--text-secondary);
+}
+
+.att-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.att-toggle {
+    display: flex;
+    gap: 4px;
+}
+
+.att-btn {
+    padding: 5px 14px;
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.att-btn.att-present.active {
+    background: var(--success-light);
+    color: var(--success-text);
+    border-color: #86efac;
+}
+
+.att-btn.att-absent.active {
+    background: var(--danger-light);
+    color: var(--danger-text);
+    border-color: #fca5a5;
+}
+
+.att-btn:hover {
+    border-color: var(--border-dark);
+}

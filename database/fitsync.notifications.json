@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19f6"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expiring in 7 days",
+  "message": "Amit Kumar's subscription expires in 7 days.",
+  "subscriptionId": {
+    "$oid": "69f8a274bf347ccd861f17ff"
+  },
+  "daysOut": 7,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T07:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19f7"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a274bf347ccd861f17e9"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expiring in 1 day",
+  "message": "Sneha Gupta's subscription expires tomorrow.",
+  "subscriptionId": {
+    "$oid": "69f8a274bf347ccd861f1805"
+  },
+  "daysOut": 1,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T01:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19f8"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expired yesterday",
+  "message": "Vikram Singh's subscription expired yesterday.",
+  "subscriptionId": {
+    "$oid": "69f8a274bf347ccd861f180b"
+  },
+  "daysOut": -1,
+  "read": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T01:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19f9"
+  },
+  "audience": "customer",
+  "customerId": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "kind": "membership_expiry",
+  "title": "Your membership renews soon",
+  "message": "Your current plan renews in 14 days. We'll auto-charge unless you let us know otherwise.",
+  "subscriptionId": {
+    "$oid": "69f8a274bf347ccd861f17f3"
+  },
+  "daysOut": 14,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T13:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19fa"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expiring in 7 days",
+  "message": "Arjun Nair's subscription expires in 7 days.",
+  "subscriptionId": {
+    "$oid": "69f8a275bf347ccd861f1911"
+  },
+  "daysOut": 7,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T07:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19fb"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a275bf347ccd861f18fd"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expiring in 1 day",
+  "message": "Pooja Shah's subscription expires tomorrow.",
+  "subscriptionId": {
+    "$oid": "69f8a275bf347ccd861f1917"
+  },
+  "daysOut": 1,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T01:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19fc"
+  },
+  "audience": "admin",
+  "customerId": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "kind": "membership_expiry",
+  "title": "Membership expired yesterday",
+  "message": "Kiran Rao's subscription expired yesterday.",
+  "subscriptionId": {
+    "$oid": "69f8a275bf347ccd861f191d"
+  },
+  "daysOut": -1,
+  "read": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-02T01:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f19fd"
+  },
+  "audience": "customer",
+  "customerId": {
+    "$oid": "69f8a275bf347ccd861f18f7"
+  },
+  "kind": "membership_expiry",
+  "title": "Your membership renews soon",
+  "message": "Your current plan renews in 14 days. We'll auto-charge unless you let us know otherwise.",
+  "subscriptionId": {
+    "$oid": "69f8a275bf347ccd861f1905"
+  },
+  "daysOut": 14,
+  "read": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-03T13:43:19.139Z"
+  },
+  "__v": 0,
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.140Z"
+  }
+}]

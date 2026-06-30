@@ -1,0 +1,146 @@
+/* ============================================================
+   GymScene.css
+   Animations for the illustrated gym scene (GymScene.jsx).
+   All animations use transform + opacity only for GPU acceleration.
+============================================================ */
+
+.gym-scene {
+    width: 100%;
+    height: 100%;
+    display: block;
+    user-select: none;
+}
+
+/* ───────────────────────────────────────────────────────────
+   CITY WINDOW LIGHTS — 3 staggered blink cycles
+─────────────────────────────────────────────────────────── */
+@keyframes gsBlink {
+    0%, 45%, 55%, 100% { opacity: 1; }
+    48%, 52%           { opacity: 0.15; }
+}
+.gs-blink-1 { animation: gsBlink 7s ease-in-out infinite; }
+.gs-blink-2 { animation: gsBlink 9s ease-in-out infinite 2s; }
+.gs-blink-3 { animation: gsBlink 11s ease-in-out infinite 4s; }
+
+/* ───────────────────────────────────────────────────────────
+   TREADMILL BELT — conveyor motion
+   The belt group moves right→left and loops.
+─────────────────────────────────────────────────────────── */
+@keyframes gsBelt {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+}
+.gs-belt {
+    animation: gsBelt 0.6s linear infinite;
+    will-change: transform;
+}
+
+/* ───────────────────────────────────────────────────────────
+   RUNNER — cycling legs
+   Two overlapping legs alternate using independent keyframes
+   so they look out of phase (proper running gait).
+─────────────────────────────────────────────────────────── */
+@keyframes gsLegA {
+    0%, 100% { transform: translate(0, 0) rotate(-15deg); }
+    50%      { transform: translate(0, -4px) rotate(20deg); }
+}
+@keyframes gsLegB {
+    0%, 100% { transform: translate(0, -4px) rotate(20deg); }
+    50%      { transform: translate(0, 0) rotate(-15deg); }
+}
+.gs-leg-a {
+    animation: gsLegA 0.5s ease-in-out infinite;
+    transform-origin: 28px 56px;
+    will-change: transform;
+}
+.gs-leg-b {
+    animation: gsLegB 0.5s ease-in-out infinite;
+    transform-origin: 38px 56px;
+    will-change: transform;
+}
+
+/* Gentle torso bob so the whole runner feels alive */
+@keyframes gsBob {
+    0%, 100% { transform: translate(60px, 0); }
+    50%      { transform: translate(60px, -2px); }
+}
+.gs-runner {
+    animation: gsBob 0.5s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* ───────────────────────────────────────────────────────────
+   PUNCHING BAG — gentle pendulum
+─────────────────────────────────────────────────────────── */
+@keyframes gsPunchSwing {
+    0%, 100% { transform: rotate(-4deg); }
+    50%      { transform: rotate(4deg); }
+}
+.gs-punch {
+    animation: gsPunchSwing 3.2s ease-in-out infinite;
+    transform-origin: 0 18px;    /* pivot at the chain attach point */
+    will-change: transform;
+}
+
+/* ───────────────────────────────────────────────────────────
+   PULL-UP PERSON — slow vertical loop
+   Rising = chin-up, falling = hanging back down.
+─────────────────────────────────────────────────────────── */
+@keyframes gsPullup {
+    0%, 100% { transform: translateY(14px); }
+    40%      { transform: translateY(-4px); }
+    60%      { transform: translateY(-4px); }
+}
+.gs-puller {
+    animation: gsPullup 3.8s ease-in-out infinite;
+    will-change: transform;
+}
+
+/* ───────────────────────────────────────────────────────────
+   TEAL LED PULSE — on treadmill console
+─────────────────────────────────────────────────────────── */
+@keyframes gsLedPulse {
+    0%, 100% { opacity: 0;   transform: scale(0.6); }
+    50%      { opacity: 0.6; transform: scale(1); }
+}
+.gs-led-pulse {
+    animation: gsLedPulse 2.4s ease-in-out infinite;
+    transform-origin: 310px 540px;
+    filter: blur(6px);
+    will-change: transform, opacity;
+}
+
+/* ───────────────────────────────────────────────────────────
+   DUST PARTICLES — gentle float
+─────────────────────────────────────────────────────────── */
+@keyframes gsDustFloat {
+    0%, 100% { transform: translateY(0);    opacity: 0.4; }
+    50%      { transform: translateY(-10px); opacity: 0.6; }
+}
+.gs-dust circle {
+    animation: gsDustFloat 5s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+.gs-dust circle:nth-child(2) { animation-delay: -1s; animation-duration: 6s; }
+.gs-dust circle:nth-child(3) { animation-delay: -2s; animation-duration: 4.5s; }
+.gs-dust circle:nth-child(4) { animation-delay: -3s; animation-duration: 5.5s; }
+.gs-dust circle:nth-child(5) { animation-delay: -1.5s; animation-duration: 7s; }
+
+/* ───────────────────────────────────────────────────────────
+   REDUCED MOTION — everything static for users who opt out
+─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .gs-belt,
+    .gs-leg-a,
+    .gs-leg-b,
+    .gs-runner,
+    .gs-punch,
+    .gs-puller,
+    .gs-led-pulse,
+    .gs-dust circle,
+    .gs-blink-1,
+    .gs-blink-2,
+    .gs-blink-3 {
+        animation: none !important;
+    }
+}

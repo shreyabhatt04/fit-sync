@@ -1,0 +1,7920 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1823"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1824"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1825"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1826"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1827"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1828"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1829"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f182f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1830"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1831"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1832"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1833"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1834"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1835"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1836"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1837"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1838"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1839"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f183f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1840"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1841"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1842"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1843"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1844"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1845"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1846"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1847"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1848"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1849"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f184f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1850"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1851"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1852"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1853"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1854"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1855"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1856"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1857"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1858"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1859"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f185f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1860"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1861"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1862"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1863"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1864"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1865"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1866"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1867"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1868"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1869"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f186f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1870"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1871"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1872"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1873"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1874"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1875"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1876"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1877"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1878"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1879"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f187f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1880"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1881"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1882"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1883"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1884"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1885"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1886"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1887"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1888"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1889"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f188f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1890"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1891"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1892"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1893"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1894"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1895"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1896"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1897"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1898"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1899"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189a"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189c"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189e"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f189f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a0"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a1"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a2"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a3"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a4"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a5"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a6"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a7"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a8"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18a9"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18aa"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ab"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ac"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ad"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ae"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18af"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b0"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b1"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b2"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b3"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b4"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b5"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b6"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b7"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b8"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18b9"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ba"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18bb"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18bc"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18bd"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18be"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18bf"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c0"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c1"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c2"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c3"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c4"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c5"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c6"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c7"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c8"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18c9"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ca"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18cb"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18cc"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18cd"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ce"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.711Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18cf"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d0"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d1"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d2"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d3"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d4"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d5"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d6"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f192f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1930"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1931"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1932"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1933"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1934"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1935"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1936"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1937"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1938"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1939"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f193f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1940"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1941"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1942"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1943"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1944"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1945"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1946"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1947"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1948"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1949"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f194f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1950"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1951"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1952"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1953"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1954"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1955"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1956"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1957"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1958"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1959"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f195f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1960"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1961"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1962"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1963"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1964"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1965"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1966"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1967"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1968"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1969"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f196f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1970"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1971"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1972"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1973"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1974"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1975"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1976"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1977"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1978"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1979"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f197f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1980"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1981"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1982"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1983"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1984"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1985"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1986"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1987"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1988"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1989"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f198f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1990"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1991"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1992"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1993"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1994"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1995"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1996"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.062Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1997"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1998"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1999"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199a"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199c"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199e"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f199f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a0"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a1"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a2"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a3"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a4"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a5"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a6"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a7"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-04T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a8"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-05T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19a9"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-06T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19aa"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-07T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ab"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-08T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ac"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-09T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ad"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-10T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ae"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-11T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19af"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-12T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b0"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-13T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b1"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-14T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b2"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-15T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b3"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-16T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b4"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-17T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b5"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-18T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b6"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-19T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b7"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-20T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b8"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-21T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19b9"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-22T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ba"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-23T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19bb"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-24T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19bc"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-25T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19bd"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-26T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19be"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-27T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19bf"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-28T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c0"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c1"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-04-30T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c2"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-05-01T18:30:00.000Z"
+  },
+  "status": "present",
+  "checkIn": "06:30 AM",
+  "checkOut": "08:00 AM",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c3"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-05-02T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c4"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "date": {
+    "$date": "2026-05-03T18:30:00.000Z"
+  },
+  "status": "absent",
+  "checkIn": "",
+  "checkOut": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.063Z"
+  }
+}]

@@ -1,0 +1,555 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17f5"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f17f3"
+  },
+  "amount": 4499,
+  "paymentDate": {
+    "$date": "2026-01-15T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-20T00:00:00.000Z"
+  },
+  "mode": "Cash",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.667Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.667Z"
+  },
+  "invoiceNumber": "INV-2026-0001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17fb"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f17f9"
+  },
+  "amount": 999,
+  "paymentDate": {
+    "$date": "2026-01-17T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-22T00:00:00.000Z"
+  },
+  "mode": "Online",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.674Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.674Z"
+  },
+  "invoiceNumber": "INV-2026-0002",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1801"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f17ff"
+  },
+  "amount": 4499,
+  "paymentDate": {
+    "$date": "2026-01-19T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-24T00:00:00.000Z"
+  },
+  "mode": "Card",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.678Z"
+  },
+  "invoiceNumber": "INV-2026-0003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1807"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e9"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f1805"
+  },
+  "amount": 2499,
+  "paymentDate": {
+    "$date": "2026-01-21T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-26T00:00:00.000Z"
+  },
+  "mode": "UPI",
+  "status": "due",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.681Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.681Z"
+  },
+  "invoiceNumber": "INV-2026-0004",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f180d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f180b"
+  },
+  "amount": 999,
+  "paymentDate": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-28T00:00:00.000Z"
+  },
+  "mode": "Cash",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.686Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.686Z"
+  },
+  "invoiceNumber": "INV-2026-0005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1813"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f1811"
+  },
+  "amount": 7999,
+  "paymentDate": {
+    "$date": "2026-01-25T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-30T00:00:00.000Z"
+  },
+  "mode": "Online",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.690Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.690Z"
+  },
+  "invoiceNumber": "INV-2026-0006",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1819"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ef"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f1817"
+  },
+  "amount": 2499,
+  "paymentDate": {
+    "$date": "2026-01-27T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-02-01T00:00:00.000Z"
+  },
+  "mode": "Card",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.694Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.694Z"
+  },
+  "invoiceNumber": "INV-2026-0007",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f181f"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "subscription": {
+    "$oid": "69f8a274bf347ccd861f181d"
+  },
+  "amount": 4499,
+  "paymentDate": {
+    "$date": "2026-01-29T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-02-03T00:00:00.000Z"
+  },
+  "mode": "UPI",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.697Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.697Z"
+  },
+  "invoiceNumber": "INV-2026-0008",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1907"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f7"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f1905"
+  },
+  "amount": 999,
+  "paymentDate": {
+    "$date": "2026-01-15T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-20T00:00:00.000Z"
+  },
+  "mode": "Cash",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.038Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.038Z"
+  },
+  "invoiceNumber": "INV-2026-0001",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f190d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f190b"
+  },
+  "amount": 7999,
+  "paymentDate": {
+    "$date": "2026-01-17T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-22T00:00:00.000Z"
+  },
+  "mode": "Online",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.043Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.043Z"
+  },
+  "invoiceNumber": "INV-2026-0002",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1913"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f1911"
+  },
+  "amount": 2499,
+  "paymentDate": {
+    "$date": "2026-01-19T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-24T00:00:00.000Z"
+  },
+  "mode": "Card",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.045Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.045Z"
+  },
+  "invoiceNumber": "INV-2026-0003",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1919"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fd"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f1917"
+  },
+  "amount": 999,
+  "paymentDate": {
+    "$date": "2026-01-21T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-26T00:00:00.000Z"
+  },
+  "mode": "UPI",
+  "status": "due",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.048Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.048Z"
+  },
+  "invoiceNumber": "INV-2026-0004",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f191f"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f191d"
+  },
+  "amount": 4499,
+  "paymentDate": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-28T00:00:00.000Z"
+  },
+  "mode": "Cash",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.051Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.051Z"
+  },
+  "invoiceNumber": "INV-2026-0005",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1925"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f1923"
+  },
+  "amount": 2499,
+  "paymentDate": {
+    "$date": "2026-01-25T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-01-30T00:00:00.000Z"
+  },
+  "mode": "Online",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.053Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.053Z"
+  },
+  "invoiceNumber": "INV-2026-0006",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f192b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "subscription": {
+    "$oid": "69f8a275bf347ccd861f1929"
+  },
+  "amount": 7999,
+  "paymentDate": {
+    "$date": "2026-01-27T00:00:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-02-01T00:00:00.000Z"
+  },
+  "mode": "Card",
+  "status": "paid",
+  "notes": "",
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.055Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.055Z"
+  },
+  "invoiceNumber": "INV-2026-0007",
+  "__v": 0
+}]

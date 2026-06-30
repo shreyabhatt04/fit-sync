@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17e0"
+  },
+  "name": "Main Branch",
+  "address": "SG Highway, Ahmedabad",
+  "phone": "7912345678",
+  "manager": "John Admin",
+  "isMain": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.653Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.653Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17e1"
+  },
+  "name": "Satellite",
+  "address": "Satellite, Ahmedabad",
+  "phone": "7912345679",
+  "manager": "Raj Patel",
+  "isMain": false,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.653Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.653Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f18f5"
+  },
+  "name": "Adajan Branch",
+  "address": "Adajan, Surat",
+  "phone": "2612345678",
+  "manager": "Meera Shah",
+  "isMain": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.029Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.029Z"
+  }
+}]

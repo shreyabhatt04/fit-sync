@@ -1,0 +1,525 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17f3"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e3"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17dd"
+  },
+  "startDate": {
+    "$date": "2026-01-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-07-15T00:00:00.000Z"
+  },
+  "amount": 4499,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.666Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.666Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17f9"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e5"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17db"
+  },
+  "startDate": {
+    "$date": "2026-01-17T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-02-17T00:00:00.000Z"
+  },
+  "amount": 999,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.673Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.673Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17ff"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e7"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17dd"
+  },
+  "startDate": {
+    "$date": "2026-01-19T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-07-19T00:00:00.000Z"
+  },
+  "amount": 4499,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.677Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1805"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17e9"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17dc"
+  },
+  "startDate": {
+    "$date": "2026-01-21T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-21T00:00:00.000Z"
+  },
+  "amount": 2499,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.681Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f180b"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17eb"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17db"
+  },
+  "startDate": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-02-23T00:00:00.000Z"
+  },
+  "amount": 999,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1811"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ed"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17de"
+  },
+  "startDate": {
+    "$date": "2026-01-25T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2027-01-25T00:00:00.000Z"
+  },
+  "amount": 7999,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.689Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.689Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f1817"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17ef"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17dc"
+  },
+  "startDate": {
+    "$date": "2026-01-27T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-27T00:00:00.000Z"
+  },
+  "amount": 2499,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.693Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.693Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f181d"
+  },
+  "customer": {
+    "$oid": "69f8a274bf347ccd861f17f1"
+  },
+  "membership": {
+    "$oid": "69f8a274bf347ccd861f17dd"
+  },
+  "startDate": {
+    "$date": "2026-01-29T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-07-29T00:00:00.000Z"
+  },
+  "amount": 4499,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.697Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.697Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1905"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f7"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f0"
+  },
+  "startDate": {
+    "$date": "2026-01-15T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-02-15T00:00:00.000Z"
+  },
+  "amount": 999,
+  "status": "pending",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.037Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.037Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f190b"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18f9"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f3"
+  },
+  "startDate": {
+    "$date": "2026-01-17T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2027-01-17T00:00:00.000Z"
+  },
+  "amount": 7999,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.042Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1911"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fb"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f1"
+  },
+  "startDate": {
+    "$date": "2026-01-19T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-19T00:00:00.000Z"
+  },
+  "amount": 2499,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.045Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.045Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1917"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18fd"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f0"
+  },
+  "startDate": {
+    "$date": "2026-01-21T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-02-21T00:00:00.000Z"
+  },
+  "amount": 999,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.048Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f191d"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f18ff"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f2"
+  },
+  "startDate": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-07-23T00:00:00.000Z"
+  },
+  "amount": 4499,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.050Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1923"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1901"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f1"
+  },
+  "startDate": {
+    "$date": "2026-01-25T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-25T00:00:00.000Z"
+  },
+  "amount": 2499,
+  "status": "expired",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.052Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f1929"
+  },
+  "customer": {
+    "$oid": "69f8a275bf347ccd861f1903"
+  },
+  "membership": {
+    "$oid": "69f8a275bf347ccd861f18f3"
+  },
+  "startDate": {
+    "$date": "2026-01-27T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2027-01-27T00:00:00.000Z"
+  },
+  "amount": 7999,
+  "status": "active",
+  "notes": "",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "remindersSent": {
+    "fifteenDay": false,
+    "sevenDay": false,
+    "oneDay": false
+  },
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.054Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.054Z"
+  },
+  "__v": 0
+}]

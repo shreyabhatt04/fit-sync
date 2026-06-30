@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17db"
+  },
+  "name": "Basic",
+  "duration": "1 Month",
+  "price": 999,
+  "description": "Perfect for beginners",
+  "features": [
+    "Gym floor access",
+    "Locker room",
+    "Basic equipment"
+  ],
+  "color": "#64748b",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17dc"
+  },
+  "name": "Standard",
+  "duration": "3 Months",
+  "price": 2499,
+  "description": "Great value for regulars",
+  "features": [
+    "All Basic features",
+    "Group classes",
+    "Nutrition guide"
+  ],
+  "color": "#0891b2",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17dd"
+  },
+  "name": "Premium",
+  "duration": "6 Months",
+  "price": 4499,
+  "description": "Most popular plan",
+  "features": [
+    "All Standard features",
+    "Personal trainer 2x/month",
+    "Sauna access"
+  ],
+  "color": "#7c3aed",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17de"
+  },
+  "name": "Elite",
+  "duration": "1 Year",
+  "price": 7999,
+  "description": "Ultimate fitness experience",
+  "features": [
+    "All Premium features",
+    "Unlimited guest passes",
+    "Body composition analysis"
+  ],
+  "color": "#ea580c",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.651Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f18f0"
+  },
+  "name": "Basic",
+  "duration": "1 Month",
+  "price": 999,
+  "description": "Perfect for beginners",
+  "features": [
+    "Gym floor access",
+    "Locker room",
+    "Basic equipment"
+  ],
+  "color": "#64748b",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f18f1"
+  },
+  "name": "Standard",
+  "duration": "3 Months",
+  "price": 2499,
+  "description": "Great value for regulars",
+  "features": [
+    "All Basic features",
+    "Group classes",
+    "Nutrition guide"
+  ],
+  "color": "#0891b2",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f18f2"
+  },
+  "name": "Premium",
+  "duration": "6 Months",
+  "price": 4499,
+  "description": "Most popular plan",
+  "features": [
+    "All Standard features",
+    "Personal trainer 2x/month",
+    "Sauna access"
+  ],
+  "color": "#7c3aed",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f18f3"
+  },
+  "name": "Elite",
+  "duration": "1 Year",
+  "price": 7999,
+  "description": "Ultimate fitness experience",
+  "features": [
+    "All Premium features",
+    "Unlimited guest passes",
+    "Body composition analysis"
+  ],
+  "color": "#ea580c",
+  "isActive": true,
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.028Z"
+  }
+}]

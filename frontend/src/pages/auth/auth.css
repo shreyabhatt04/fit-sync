@@ -1,0 +1,542 @@
+/* ============================================================
+   AUTH PAGES — Login · Signup · Forgot Password · Reset
+   Theme : Black & White Monochrome
+   Font  : Bebas Neue (headings) + Inter (body)
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Two-panel layout ──────────────────────────────────────── */
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── LEFT decorative panel ─────────────────────────────────── */
+.auth-left {
+    flex: 1;
+    background:
+        radial-gradient(ellipse at 85% 15%, rgba(16, 185, 129, 0.10) 0%, transparent 55%),
+        linear-gradient(180deg, #0f1511 0%, #0a0f0d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dot grid */
+.auth-left::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+}
+
+/* Teal glow top-right */
+.auth-left::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    right: -100px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.auth-left-content {
+    max-width: 380px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* ── Brand ─────────────────────────────────────────────────── */
+.auth-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.auth-brand-icon {
+    width: 40px;
+    height: 40px;
+    background: #10b981;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+}
+
+.auth-brand-name {
+    font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.10em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* ── Left heading ──────────────────────────────────────────── */
+.auth-left-title {
+    font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.0;
+    margin-bottom: 14px;
+}
+
+.auth-left-title span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.30);
+}
+
+.auth-left-subtitle {
+    font-size: 15px;
+    color: #5c5c5c;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+/* ── Feature list ──────────────────────────────────────────── */
+.auth-features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.auth-feature-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.auth-feature-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 3px;
+    line-height: 1.2;
+}
+
+.auth-feature-desc {
+    font-size: 12.5px;
+    color: #5c5c5c;
+    font-weight: 400;
+}
+
+/* ── RIGHT form panel ──────────────────────────────────────── */
+.auth-right {
+    width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 52px;
+    background: #f8f8f8;
+    overflow-y: auto;
+}
+
+/* ── Form card ─────────────────────────────────────────────── */
+.auth-form-card {
+    width: 100%;
+    max-width: 396px;
+}
+
+/* ── Form header ───────────────────────────────────────────── */
+.auth-form-header {
+    margin-bottom: 28px;
+}
+
+.auth-form-header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+}
+
+.auth-form-header p {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+}
+
+/* ── Form ──────────────────────────────────────────────────── */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* ── Form options row (remember me + forgot) ───────────────── */
+.auth-form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 0 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ── Role selector (Signup) ────────────────────────────────── */
+.signup-role-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.role-option {
+    padding: 14px 16px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #ffffff;
+    user-select: none;
+}
+
+.role-option:hover {
+    border-color: #d0d0d0;
+    background: #f8f8f8;
+}
+
+.role-option.active {
+    border-color: #10b981;
+    background: #ecfdf5;
+    box-shadow: 0 0 0 1px #10b981;
+}
+
+.role-option input[type="radio"] {
+    accent-color: #10b981;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.role-option-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.role-option-desc {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 400;
+}
+
+/* ── Password strength bar ─────────────────────────────────── */
+.password-strength {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.strength-track {
+    flex: 1;
+    height: 4px;
+    background: #e8e8e8;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-label {
+    font-size: 11.5px;
+    font-weight: 600;
+    min-width: 44px;
+    text-align: right;
+}
+
+/* ── Demo access section ───────────────────────────────────── */
+.demo-section {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.demo-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #a3a3a3;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.demo-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.demo-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    width: 100%;
+}
+
+.demo-card:hover {
+    border-color: #c8c8c8;
+    background: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.demo-card-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.demo-card-role {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.demo-card-email {
+    font-size: 11px;
+    color: #808080;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ── Bottom link ───────────────────────────────────────────── */
+.auth-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* ── Auth link ─────────────────────────────────────────────── */
+.auth-link {
+    color: #059669;
+    font-weight: 600;
+    transition: color 0.15s ease;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(16, 185, 129, 0.4);
+}
+
+.auth-link:hover {
+    color: #047857;
+    text-decoration-color: #10b981;
+}
+
+/* ── Submit button override ────────────────────────────────── */
+.auth-page .btn-primary {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+    margin-top: 8px;
+}
+
+.auth-page .btn-primary:hover:not(:disabled) {
+    background: #059669;
+    border-color: #059669;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.32);
+}
+
+/* ── Form inputs on light bg ───────────────────────────────── */
+.auth-page .form-input {
+    background: #ffffff;
+    border-color: #d8d8d8;
+}
+
+.auth-page .form-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* ── Spinner on dark btn ───────────────────────────────────── */
+.auth-page .spinner {
+    border-color: rgba(255, 255, 255, 0.25);
+    border-top-color: #ffffff;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 960px) {
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        width: 100%;
+        padding: 48px 32px;
+        background: #ffffff;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-right {
+        padding: 32px 20px;
+    }
+
+    .signup-role-toggle {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── ADD THESE STYLES to the bottom of auth.css ─────────────── */
+
+/* ── OTP input boxes ───────────────────────────────────────── */
+.otp-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.otp-input {
+    width: 52px;
+    height: 60px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #111111;
+    background: #ffffff;
+    border: 1.5px solid #d8d8d8;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    font-family: 'Inter', sans-serif;
+    caret-color: transparent;
+}
+
+.otp-input:focus {
+    border-color: #111111;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.otp-input--error {
+    border-color: #c0261e;
+    background: #fff0ef;
+}
+
+.otp-input--error:focus {
+    box-shadow: 0 0 0 3px rgba(192, 38, 30, 0.10);
+}
+
+/* ── Resend row ────────────────────────────────────────────── */
+.otp-resend {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #808080;
+}
+
+.otp-resend strong {
+    color: #111111;
+    font-weight: 700;
+}
+/* ═══════════════════════════════════════════════════════════
+   BATCH 8b-5 — MOBILE (auth pages)
+   Hide illustrated left panel, form takes full viewport.
+═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+    .auth-left {
+        display: none;
+    }
+    .auth-right {
+        flex: 1;
+        width: 100%;
+        padding: 32px 24px;
+    }
+    .auth-form-card {
+        max-width: 440px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-right {
+        /* Slightly darker bg so the white form-card visually pops. */
+        background: #f0f1f3;
+        padding: 20px 16px;
+    }
+    .auth-form-card {
+        /* Make the form actually look like a card on phone — currently
+           it's a transparent block sitting on a same-color background,
+           which reads as "edge to edge" with no breathing room. */
+        background: #ffffff;
+        border: 1px solid var(--border, #e5e7eb);
+        border-radius: 14px;
+        padding: 24px 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .auth-form-header h2 {
+        font-size: 24px;
+    }
+    /* Role picker stays 1 col */
+    .role-option {
+        padding: 12px;
+    }
+}

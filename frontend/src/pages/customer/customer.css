@@ -1,0 +1,1047 @@
+/* ============================================================
+   CUSTOMER PANEL — all customer pages
+   Theme : Light Monochrome
+   Font  : DM Sans throughout
+============================================================ */
+
+.customer-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ── Welcome Banner ─────────────────────────────────────────── */
+.welcome-banner {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle dot grid */
+.welcome-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 26px 26px;
+    pointer-events: none;
+}
+
+/* Soft green glow */
+.welcome-banner::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    right: -40px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-family: var(--font-display);
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.welcome-sub {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+}
+
+.welcome-plan-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 20px;
+    border-radius: var(--radius-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.plan-icon {
+    font-size: 24px;
+}
+
+.plan-badge-label {
+    font-size: 10.5px;
+    color: #5c5c5c;
+    margin-bottom: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.plan-badge-name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ── Expiry Alert ───────────────────────────────────────────── */
+.expiry-alert {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: #FFFBEB;
+    border: 1px solid #FDE68A;
+    border-radius: var(--radius-lg);
+    font-size: 14px;
+    color: #B45309;
+    font-weight: 500;
+}
+
+.expiry-alert svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #D97706;
+}
+
+.expiry-alert a {
+    color: #92400E;
+    font-weight: 700;
+}
+
+/* ── Customer Stat Cards ────────────────────────────────────── */
+.customer-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.customer-stat-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+}
+
+.customer-stat-card:hover {
+    border-color: #d0d0d0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.customer-stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.customer-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #808080;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.customer-stat-value {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 2px;
+    letter-spacing: 0.03em;
+    line-height: 1.0;
+    text-transform: uppercase;
+}
+
+.customer-stat-sub {
+    font-size: 11px;
+    color: #808080;
+    font-weight: 400;
+}
+
+/* ── Dashboard Row ──────────────────────────────────────────── */
+.customer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ── Card Header labels ─────────────────────────────────────── */
+.customer-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 0;
+}
+
+.customer-card-link {
+    font-size: 13px;
+    color: #111111;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.customer-card-link:hover {
+    color: var(--primary-dark);
+}
+
+/* ── Attendance Progress Bar ────────────────────────────────── */
+.att-progress-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.att-progress-track {
+    flex: 1;
+    height: 6px;
+    background: #f2f2f2;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.att-progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, #111111, #404040);
+    border-radius: var(--radius-full);
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.att-progress-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    min-width: 36px;
+}
+
+/* ── Attendance Week Dots ───────────────────────────────────── */
+.attendance-week {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.att-day {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 4px;
+    border-radius: var(--radius);
+    border: 1px solid #e8e8e8;
+    background: #f8f8f8;
+    transition: var(--transition);
+}
+
+.att-day.present {
+    background: #F0FDF4;
+    border-color: #BBF7D0;
+}
+
+.att-day.absent {
+    background: #FEF2F2;
+    border-color: #FECACA;
+}
+
+.att-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d0d0d0;
+}
+
+.att-dot.present {
+    background: var(--success, #1a7a42);
+}
+
+.att-dot.absent {
+    background: #EF4444;
+}
+
+.att-day-date {
+    font-size: 10px;
+    color: #808080;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.att-day-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.att-legend {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.att-legend-item.present {
+    color: var(--success-text, #166035);
+}
+
+.att-legend-item.absent {
+    color: #DC2626;
+}
+
+/* ── Payment List ───────────────────────────────────────────── */
+.customer-payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.customer-payment-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+    transition: var(--transition);
+}
+
+.customer-payment-item:last-child {
+    border-bottom: none;
+}
+
+.customer-payment-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius);
+    background: #f2f2f2;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.customer-payment-info {
+    flex: 1;
+}
+
+.customer-payment-plan {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.customer-payment-date {
+    font-size: 11.5px;
+    color: #808080;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.customer-payment-right {
+    text-align: right;
+}
+
+.customer-payment-amount {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+}
+
+/* ── Quick Links ────────────────────────────────────────────── */
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.quick-link-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: var(--radius-lg);
+    padding: 22px 16px;
+    text-align: center;
+    transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.quick-link-card:hover {
+    border-color: #d8d8d8;
+    background: #f2f2f2;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.quick-link-icon {
+    font-size: 28px;
+}
+
+.quick-link-label {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 400;
+    color: #111111;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.quick-link-sub {
+    font-size: 11.5px;
+    color: #808080;
+    font-weight: 400;
+}
+
+/* ── Current Subscription Card ──────────────────────────────── */
+.subscription-current-card {
+    background: #111111;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: 28px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.subscription-current-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+}
+
+.sub-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-plan-name {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    letter-spacing: 0;
+    font-family: var(--font-display);
+}
+
+.sub-plan-price {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+}
+
+.sub-status-badge {
+    background: rgba(255, 255, 255, 0.10);
+    color: #e8e8e8;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 6px 16px;
+    border-radius: var(--radius-full);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.sub-details-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-detail-item label {
+    font-size: 10.5px;
+    color: #5c5c5c;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.sub-detail-item p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e8e8e8;
+}
+
+.sub-days-bar {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-days-track {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.sub-days-fill {
+    height: 100%;
+    background: linear-gradient(to right, #404040, #808080);
+    border-radius: var(--radius-full);
+    transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Available Plans Grid ───────────────────────────────────── */
+.plans-available-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.available-plan-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.available-plan-card:hover {
+    border-color: #d8d8d8;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    transform: translateY(-3px);
+}
+
+.available-plan-card.recommended {
+    border-color: #111111;
+    box-shadow: 0 0 0 1px #111111, 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.recommended-tag {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111111;
+    color: #ffffff;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 3px 14px;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    letter-spacing: 0.06em;
+}
+
+.avail-plan-name {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.avail-plan-price {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 2px;
+    letter-spacing: 0.02em;
+}
+
+.avail-plan-dur {
+    font-size: 12px;
+    color: #808080;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.avail-plan-features {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.avail-plan-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #5c5c5c;
+    padding: 5px 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: 400;
+}
+
+.avail-plan-feature:last-child {
+    border-bottom: none;
+}
+
+/* ── Attendance Calendar ────────────────────────────────────── */
+.attendance-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+.cal-day-header {
+    text-align: center;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #808080;
+    padding: 4px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.cal-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    font-size: 12.5px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.cal-day.empty {
+    background: transparent;
+    border-color: transparent;
+}
+
+.cal-day.present {
+    background: #F0FDF4;
+    color: var(--success-text, #166035);
+    border-color: #BBF7D0;
+}
+
+.cal-day.absent {
+    background: #FEF2F2;
+    color: #DC2626;
+    border-color: #FECACA;
+}
+
+.cal-day.future {
+    background: #f8f8f8;
+    color: #d0d0d0;
+    border-color: transparent;
+}
+
+.cal-day.today {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+    font-weight: 700;
+}
+
+.cal-day.no-data {
+    background: #f8f8f8;
+    color: #d0d0d0;
+    border-color: transparent;
+}
+
+.cal-legend {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.cal-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+
+.cal-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+/* ── Messages ───────────────────────────────────────────────── */
+.messages-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 0;
+    height: 520px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.messages-sidebar {
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+}
+
+.messages-sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.message-contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.message-contact.active {
+    background: #f2f2f2;
+}
+
+.message-contact:hover:not(.active) {
+    background: #f2f2f2;
+}
+
+.message-contact-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.message-contact-name {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.message-contact-last {
+    font-size: 11.5px;
+    color: #808080;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.messages-chat {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.chat-header {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+}
+
+.chat-header-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.chat-header-status {
+    font-size: 11.5px;
+    color: var(--success-text, #166035);
+    font-weight: 500;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #f8f8f8;
+}
+
+.chat-bubble-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble-row.sent {
+    align-items: flex-end;
+}
+
+.chat-bubble-row.received {
+    align-items: flex-start;
+}
+
+.chat-bubble {
+    max-width: 65%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 13.5px;
+    line-height: 1.55;
+}
+
+.chat-bubble-row.sent .chat-bubble {
+    background: #111111;
+    color: #ffffff;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-bubble-row.received .chat-bubble {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #e8e8e8;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-time {
+    font-size: 11px;
+    color: #808080;
+    margin-top: 4px;
+    padding: 0 4px;
+    font-weight: 500;
+}
+
+.chat-input-row {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #ffffff;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 9px 16px;
+    border: 1px solid #d0d0d0;
+    border-radius: var(--radius-full);
+    font-size: 13.5px;
+    color: var(--text-primary);
+    background: #f8f8f8;
+    font-family: var(--font-body);
+    outline: none;
+    transition: var(--transition);
+}
+
+.chat-input::placeholder {
+    color: #808080;
+}
+
+.chat-input:focus {
+    border-color: #111111;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
+}
+
+.chat-send-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #111111;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.chat-send-btn:hover {
+    background: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transform: scale(1.05);
+}
+
+.chat-send-btn svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* ── Payment mode badges ────────────────────────────────────── */
+.mode-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    font-size: 11.5px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.mode-cash {
+    background: #F0FDF4;
+    color: #15803D;
+    border-color: #BBF7D0;
+}
+
+.mode-card {
+    background: #F5F3FF;
+    color: #6D28D9;
+    border-color: #DDD6FE;
+}
+
+.mode-online {
+    background: #F0F9FF;
+    color: #0E7490;
+    border-color: #BAE6FD;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+    .customer-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plans-available-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .customer-row {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .messages-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .messages-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .plans-available-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-banner {
+        padding: 20px;
+    }
+
+    .subscription-current-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customer-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .attendance-calendar-grid {
+        gap: 3px;
+    }
+}
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 31 — TYPING INDICATOR DOTS (customer messages page)
+   ───────────────────────────────────────────────────────────────
+   Three small dots that pulse in sequence while waiting for the
+   simulated admin reply. The dots use the same color as the
+   received-bubble text so they read as part of the conversation.
+   ═══════════════════════════════════════════════════════════ */
+.typing-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.4;
+    animation: typingDotPulse 1.2s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typingDotPulse {
+    0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+    30%           { opacity: 1;   transform: translateY(-3px); }
+}
+
+/* Send button disabled state (only-on-empty-input or while typing) */
+.chat-send-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+/* ═══════════════════════════════════════════════════════════ */

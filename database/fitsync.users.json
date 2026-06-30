@@ -1,0 +1,435 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17d4"
+  },
+  "companyId": null,
+  "firstName": "Arjun",
+  "lastName": "Malhotra",
+  "email": "arjun.malhotra@fitsync.com",
+  "phone": "9876540001",
+  "password": "$2a$12$akf6Brm7g.0mcfh1dYKDkuuz.i6OqfD2p0F7b0gKPusZGhWpdqhQO",
+  "role": "superadmin",
+  "avatar": "https://ui-avatars.com/api/?name=Arjun+Malhotra&background=10B981&color=fff&size=200",
+  "gender": "male",
+  "dateOfBirth": {
+    "$date": "1988-03-14T00:00:00.000Z"
+  },
+  "address": "14, Ashram Road, Ellisbridge, Ahmedabad, Gujarat 380006",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.051Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.051Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "firstName": "Vikrant",
+  "lastName": "Shah",
+  "email": "vikrant.shah@powerhousegym.com",
+  "phone": "9876543200",
+  "password": "$2a$12$uLJAZGh3z0I0cVaXSbw7BOaFe/n/wjQYCs3n6xAZTEXlvGDys4kgy",
+  "role": "admin",
+  "avatar": "https://ui-avatars.com/api/?name=Vikrant+Shah&background=059669&color=fff&size=200",
+  "gender": "male",
+  "dateOfBirth": {
+    "$date": "1985-07-22T00:00:00.000Z"
+  },
+  "address": "14, Vastrapur Lake Road, Vastrapur, Ahmedabad, Gujarat 380015",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.354Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.354Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "firstName": "Meera",
+  "lastName": "Shah",
+  "email": "meera.shah@fitzone.in",
+  "phone": "9876543300",
+  "password": "$2a$12$aN92XZs3utmizM5aCRpGOOifeilX0vhXn8UrxZ7wtOWNy2ra6DvcS",
+  "role": "admin",
+  "avatar": "https://ui-avatars.com/api/?name=Meera+Shah&background=ec4899&color=fff&size=200",
+  "gender": "female",
+  "dateOfBirth": {
+    "$date": "1990-11-08T00:00:00.000Z"
+  },
+  "address": "7B, Citylight Road, Athwa, Surat, Gujarat 395007",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.733Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.733Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19d3"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "firstName": "Rahul",
+  "lastName": "Sharma",
+  "email": "rahul.sharma@gmail.com",
+  "phone": "9876543210",
+  "password": "$2a$12$q/WjeYTgWZokHwxVy8jv0eUjC/BiAX3gDja48EV3EjeQWueH2MFKS",
+  "role": "customer",
+  "avatar": "https://ui-avatars.com/api/?name=Rahul+Sharma&background=3b82f6&color=fff&size=200",
+  "gender": "male",
+  "dateOfBirth": {
+    "$date": "1995-05-15T00:00:00.000Z"
+  },
+  "address": "8, Drive-In Road, Thaltej, Ahmedabad, Gujarat 380054",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.072Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.072Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19d6"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "firstName": "Karan",
+  "lastName": "Joshi",
+  "email": "karan.joshi@powerhousegym.com",
+  "phone": "9876543300",
+  "password": "$2a$12$DmHxWDEsLvtA5InLjPtG8..pVstFfBVb8nkgeCPPJUkhw3oiIm..G",
+  "role": "staff",
+  "avatar": "https://ui-avatars.com/api/?name=Karan%2BJoshi&background=10b981&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.368Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.368Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19da"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "firstName": "Rina",
+  "lastName": "Iyer",
+  "email": "rina.iyer@powerhousegym.com",
+  "phone": "9876543301",
+  "password": "$2a$12$7kJbjvCcSny5.4jpcgXKLOjOm6q2SEtJOHAmbL9PNAPR3TdoRtkl2",
+  "role": "staff",
+  "avatar": "https://ui-avatars.com/api/?name=Rina%2BIyer&background=10b981&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.664Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19de"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "firstName": "Saurabh",
+  "lastName": "Pandya",
+  "email": "saurabh.pandya@fitzone.in",
+  "phone": "9876543310",
+  "password": "$2a$12$Wwu.fkEBJ31FtYMJA/GVvOqSZFQ99iubRwU0MhtX.1vf/aafNTFEa",
+  "role": "staff",
+  "avatar": "https://ui-avatars.com/api/?name=Saurabh%2BPandya&background=10b981&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.957Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19e2"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "firstName": "Pooja",
+  "lastName": "Nair",
+  "email": "pooja.nair@fitzone.in",
+  "phone": "9876543311",
+  "password": "$2a$12$wfP9Dp3gpp3HLqjWcDYmEuFduP0GS0O4VmsTmg.oDLywxXeGS.IJC",
+  "role": "staff",
+  "avatar": "https://ui-avatars.com/api/?name=Pooja%2BNair&background=10b981&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.251Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.251Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19f0"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "firstName": "Priya",
+  "lastName": "Patel",
+  "email": "priya.patel@gmail.com",
+  "phone": "9876543211",
+  "password": "$2a$12$8KR15EALMEEumQ.giidP1ugINztF3m65buPiCQTbl5icaSAlAk4lG",
+  "role": "customer",
+  "avatar": "https://ui-avatars.com/api/?name=Priya%2BPatel&background=8b5cf6&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.551Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.551Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a276bf347ccd861f19f3"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "firstName": "Deepak",
+  "lastName": "Yadav",
+  "email": "sanjay.verma@gmail.com",
+  "phone": "9876543218",
+  "password": "$2a$12$fInKPuN2pS6T/z0spjLdKOGKBpiwij1Qgw5E149fNroCk42dydEc6",
+  "role": "customer",
+  "avatar": "https://ui-avatars.com/api/?name=Deepak%2BYadav&background=8b5cf6&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "approved",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:18.846Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:18.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f1a06"
+  },
+  "companyId": {
+    "$oid": "69f8a277bf347ccd861f1a04"
+  },
+  "firstName": "Ravi",
+  "lastName": "Mehta",
+  "email": "ravi.mehta@ironpump.in",
+  "phone": "9988776655",
+  "password": "$2a$12$GeIZLJD3eKemIvXFZjna4eFdOxFiu47vjWj4T4//Yg1o6kWVC5yp.",
+  "role": "admin",
+  "avatar": "https://ui-avatars.com/api/?name=Ravi+Mehta&background=f59e0b&color=fff&size=200",
+  "gender": "",
+  "dateOfBirth": null,
+  "address": "",
+  "isActive": true,
+  "verificationStatus": "pending",
+  "isEmailVerified": true,
+  "emailOtp": null,
+  "emailOtpExpiry": null,
+  "passwordResetToken": null,
+  "passwordResetExpiry": null,
+  "preferences": {
+    "notifications": true,
+    "theme": "light"
+  },
+  "branchId": null,
+  "permissions": [],
+  "invitedBy": null,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:19.148Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.148Z"
+  },
+  "__v": 0
+}]

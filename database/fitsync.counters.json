@@ -1,0 +1,48 @@
+[{
+  "_id": "invoice:69f110703a22c87b7f83c763:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f110703a22c87b7f83c878:2026",
+  "seq": 7
+},
+{
+  "_id": "invoice:69f641af7728f9266aa5928f:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f89f8a4ab15078fa64a777:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f89f8b4ab15078fa64a88c:2026",
+  "seq": 7
+},
+{
+  "_id": "invoice:69f8a04a8d408a14e645abe8:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f8a04b8d408a14e645acfd:2026",
+  "seq": 7
+},
+{
+  "_id": "platform-invoice:2026",
+  "seq": 6
+},
+{
+  "_id": "invoice:69f8a0cd44404ab145cd8bcb:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f8a0cd44404ab145cd8ce0:2026",
+  "seq": 7
+},
+{
+  "_id": "invoice:69f8a274bf347ccd861f17d6:2026",
+  "seq": 8
+},
+{
+  "_id": "invoice:69f8a274bf347ccd861f18eb:2026",
+  "seq": 7
+}]

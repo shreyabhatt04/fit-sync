@@ -1,0 +1,248 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d8"
+  },
+  "category": "Rent",
+  "description": "Monthly gym rent - April",
+  "amount": 25000,
+  "date": {
+    "$date": "2026-04-01T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18d9"
+  },
+  "category": "Utilities",
+  "description": "Electricity & water - April",
+  "amount": 8500,
+  "date": {
+    "$date": "2026-04-05T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18da"
+  },
+  "category": "Trainer Salary",
+  "description": "Trainer salary - April",
+  "amount": 35000,
+  "date": {
+    "$date": "2026-04-30T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18db"
+  },
+  "category": "Equipment",
+  "description": "New treadmill purchase",
+  "amount": 45000,
+  "date": {
+    "$date": "2026-03-15T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18dc"
+  },
+  "category": "Marketing",
+  "description": "Social media ads - March",
+  "amount": 5000,
+  "date": {
+    "$date": "2026-03-10T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f17d8"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c6"
+  },
+  "category": "Rent",
+  "description": "April rent",
+  "amount": 20000,
+  "date": {
+    "$date": "2026-04-01T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c7"
+  },
+  "category": "Utilities",
+  "description": "April utilities",
+  "amount": 6000,
+  "date": {
+    "$date": "2026-04-05T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19c8"
+  },
+  "category": "Staff Salary",
+  "description": "Staff salary - April",
+  "amount": 28000,
+  "date": {
+    "$date": "2026-04-30T00:00:00.000Z"
+  },
+  "gstRate": 0,
+  "taxableAmount": 0,
+  "cgst": 0,
+  "sgst": 0,
+  "igst": 0,
+  "supplierName": "",
+  "supplierGstin": "",
+  "addedBy": {
+    "$oid": "69f8a274bf347ccd861f18ed"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.068Z"
+  }
+}]

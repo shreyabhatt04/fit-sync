@@ -1,0 +1,149 @@
+/* ============================================================
+   TARGETS
+   Theme : Black & White Monochrome
+============================================================ */
+
+.targets-summary {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.target-summary-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 24px;
+    background: var(--white, #ffffff);
+    border: 1px solid var(--border, #e8e8e8);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    min-width: 100px;
+    text-align: center;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.target-summary-chip:hover {
+    border-color: var(--border-dark, #d0d0d0);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.targets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ── Target Card ──────────────────────────────────────────── */
+.target-card {
+    background: var(--white, #ffffff);
+    border: 1px solid var(--border, #e8e8e8);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.target-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.04);
+    transform: translateY(-2px);
+    border-color: var(--border-dark, #d0d0d0);
+}
+
+.target-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.target-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary, #111111);
+    line-height: 1.3;
+}
+
+/* ── Percentage Circle ────────────────────────────────────── */
+.target-pct-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 3px solid var(--pct-color, #111111);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.target-pct-circle span {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--pct-color, #111111);
+}
+
+/* ── Values Row ───────────────────────────────────────────── */
+.target-values {
+    display: flex;
+    align-items: center;
+    background: var(--gray-25, #f8f8f8);
+    border: 1px solid var(--border, #e8e8e8);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.target-val-item { flex: 1; padding: 10px 12px; text-align: center; }
+
+.target-val-divider {
+    width: 1px;
+    height: 34px;
+    background: var(--border, #e8e8e8);
+    flex-shrink: 0;
+}
+
+.target-val-label {
+    font-size: 10px;
+    color: var(--text-muted, #808080);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.target-val {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary, #111111);
+}
+
+/* ── Progress Bar ─────────────────────────────────────────── */
+.target-progress-track {
+    height: 6px;
+    background: var(--gray-100, #e8e8e8);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.target-progress-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.6s cubic-bezier(0.22,1,0.36,1);
+    background: var(--pct-color, #111111);
+}
+
+/* ── Card Footer ──────────────────────────────────────────── */
+.target-card-footer {
+    display: flex;
+    gap: 8px;
+    padding-top: 4px;
+    border-top: 1px solid var(--border, #e8e8e8);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1100px) { .targets-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .targets-grid { grid-template-columns: 1fr; } }

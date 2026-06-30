@@ -1,0 +1,234 @@
+/* ============================================================
+   PAYMENTS — Payments · Due Payments · Invoices · Expenses
+   Theme : Black & White Monochrome
+============================================================ */
+
+/* ── Payment Summary Cards ────────────────────────────────── */
+.payments-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.payment-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border, #e8e8e8);
+  background: var(--white, #ffffff);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.payment-summary-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.payment-summary-green { background: var(--success-light, #f0faf4); border-color: #bbf7d0; }
+.payment-summary-blue  { background: var(--gray-25, #f8f8f8);       border-color: var(--border-dark, #d0d0d0); }
+.payment-summary-red   { background: var(--danger-light, #fff0ef);  border-color: #fecaca; }
+
+.payment-summary-icon  { font-size: 26px; }
+
+.payment-summary-value {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary, #111111);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.payment-summary-label {
+  font-size: 12px;
+  color: var(--text-secondary, #5c5c5c);
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* ── Payment Mode Badges ──────────────────────────────────── */
+.mode-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.mode-cash   { background: var(--warning-light, #fdf8ee); color: var(--warning-text, #7a500a); border-color: #fde68a; }
+.mode-card   { background: var(--purple-light,  #f3f0fb); color: var(--purple-text,  #4a2f99); border-color: #ddd6fe; }
+.mode-online { background: var(--info-light,    #eef4fc); color: var(--info-text,    #174f8c); border-color: #bae6fd; }
+
+/* ── Due Payments Alert Banner ────────────────────────────── */
+.due-alert-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--danger-light, #fff0ef);
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: var(--danger-text, #a01f18);
+  font-weight: 500;
+}
+
+.due-alert-banner svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* ── Days Overdue Badge ───────────────────────────────────── */
+.days-overdue-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.days-overdue-badge.critical { background: var(--danger-light,  #fff0ef); color: var(--danger-text,  #a01f18); border-color: #fecaca; }
+.days-overdue-badge.warning  { background: var(--warning-light, #fdf8ee); color: var(--warning-text, #7a500a); border-color: #fde68a; }
+.days-overdue-badge.normal   { background: var(--gray-50, #f2f2f2); color: var(--text-secondary, #5c5c5c); border-color: var(--border, #e8e8e8); }
+
+/* ── Invoice Modal ────────────────────────────────────────── */
+.invoice-modal-content { padding: 8px 0; }
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--gray-900, #111111);
+  margin-bottom: 20px;
+}
+
+.invoice-gym-name {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-primary, #111111);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.invoice-gym-sub { font-size: 13px; color: var(--text-muted, #808080); margin-top: 2px; }
+.invoice-meta    { text-align: right; }
+
+.invoice-number {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary, #111111);
+  letter-spacing: 0.05em;
+}
+
+.invoice-date { font-size: 12px; color: var(--text-muted, #808080); margin-top: 2px; }
+
+.invoice-section       { margin-bottom: 16px; }
+
+.invoice-section-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted, #808080);
+  margin-bottom: 8px;
+}
+
+.invoice-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+
+.invoice-table th {
+  padding: 8px 12px;
+  background: var(--gray-25, #f8f8f8);
+  text-align: left;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted, #808080);
+  border-bottom: 1px solid var(--border, #e8e8e8);
+}
+
+.invoice-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border, #e8e8e8);
+  color: var(--text-primary, #111111);
+}
+
+.invoice-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 0;
+  border-top: 2px solid var(--gray-900, #111111);
+  margin-top: 8px;
+}
+
+.invoice-total-label { font-size: 15px; font-weight: 600; color: var(--text-primary, #111111); }
+
+.invoice-total-value {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary, #111111);
+  letter-spacing: 0.03em;
+}
+
+/* ── Expenses Summary ─────────────────────────────────────── */
+.expenses-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.expense-summary-card {
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border, #e8e8e8);
+  background: var(--white, #ffffff);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.expense-summary-label { font-size: 12px; color: var(--text-secondary, #5c5c5c); margin-bottom: 6px; font-weight: 500; }
+
+.expense-summary-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-primary, #111111);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ── Category Badges ──────────────────────────────────────── */
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.cat-equipment { background: var(--purple-light, #f3f0fb); color: var(--purple-text, #4a2f99); border-color: #ddd6fe; }
+.cat-rent      { background: var(--warning-light, #fdf8ee); color: var(--warning-text, #7a500a); border-color: #fde68a; }
+.cat-utilities { background: var(--info-light,   #eef4fc); color: var(--info-text,   #174f8c); border-color: #bae6fd; }
+.cat-staff     { background: var(--success-light, #f0faf4); color: var(--success-text, #166035); border-color: #bbf7d0; }
+.cat-marketing { background: var(--orange-light, #fef3e8); color: var(--orange-text, #a04a0c); border-color: #fed7aa; }
+.cat-other     { background: var(--gray-50, #f2f2f2); color: var(--text-secondary, #5c5c5c); border-color: var(--border, #e8e8e8); }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .payments-summary  { grid-template-columns: 1fr; }
+  .expenses-summary  { grid-template-columns: 1fr; }
+}

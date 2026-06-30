@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e3"
+  },
+  "title": "Update membership pricing",
+  "description": "Review Q2 prices",
+  "priority": "high",
+  "status": "todo",
+  "dueDate": {
+    "$date": "2026-04-30T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e4"
+  },
+  "title": "Send renewal reminders",
+  "description": "Email expiring members",
+  "priority": "medium",
+  "status": "todo",
+  "dueDate": {
+    "$date": "2026-04-25T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e5"
+  },
+  "title": "Website redesign",
+  "description": "Update with new offers",
+  "priority": "medium",
+  "status": "inprogress",
+  "dueDate": {
+    "$date": "2026-05-10T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e6"
+  },
+  "title": "March attendance report",
+  "description": "Shared with management",
+  "priority": "low",
+  "status": "done",
+  "dueDate": {
+    "$date": "2026-03-31T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.729Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19ce"
+  },
+  "title": "Purchase new equipment",
+  "description": "Order 2 treadmills",
+  "priority": "low",
+  "status": "todo",
+  "dueDate": {
+    "$date": "2026-05-15T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19cf"
+  },
+  "title": "Staff training schedule",
+  "description": "Monthly trainer sessions",
+  "priority": "high",
+  "status": "inprogress",
+  "dueDate": {
+    "$date": "2026-04-22T00:00:00.000Z"
+  },
+  "assignedTo": "Admin",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  }
+}]

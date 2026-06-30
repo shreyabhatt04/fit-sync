@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e8"
+  },
+  "title": "Monthly Revenue",
+  "type": "Revenue",
+  "target": 100000,
+  "current": 65000,
+  "unit": "₹",
+  "deadline": {
+    "$date": "2026-04-30T00:00:00.000Z"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.730Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.730Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a274bf347ccd861f18e9"
+  },
+  "title": "New Members",
+  "type": "Members",
+  "target": 20,
+  "current": 12,
+  "unit": "members",
+  "deadline": {
+    "$date": "2026-04-30T00:00:00.000Z"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:16.730Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:16.730Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a275bf347ccd861f19d1"
+  },
+  "title": "Quarterly Revenue",
+  "type": "Revenue",
+  "target": 250000,
+  "current": 140000,
+  "unit": "₹",
+  "deadline": {
+    "$date": "2026-06-30T00:00:00.000Z"
+  },
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:17.071Z"
+  }
+}]

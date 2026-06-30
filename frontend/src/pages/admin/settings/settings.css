@@ -1,0 +1,160 @@
+/* ============================================================
+   SETTINGS — Profile · Business · Branches · Permissions · Backup
+   Theme : Light Monochrome
+   Font  : DM Sans throughout
+============================================================ */
+
+/* ── Layout ─────────────────────────────────────────────────── */
+.settings-layout {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* ── Sidebar nav ────────────────────────────────────────────── */
+.settings-sidebar {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: var(--radius-lg);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.settings-tab-btn {
+    width: 100%;
+    text-align: left;
+    padding: 9px 14px;
+    border-radius: var(--radius);
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-body);
+}
+
+.settings-tab-btn:hover {
+    background: #f2f2f2;
+    color: var(--text-primary);
+}
+
+.settings-tab-btn.active {
+    background: #f2f2f2;
+    color: #111111;
+    font-weight: 600;
+}
+
+/* ── Content ────────────────────────────────────────────────── */
+.settings-content {
+    min-width: 0;
+}
+
+.settings-section-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.settings-section-sub {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ── Upload / Logo Area ─────────────────────────────────────── */
+.settings-upload-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border: 1.5px dashed #d0d0d0;
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.settings-upload-area:hover {
+    background: #f2f2f2;
+    border-color: #808080;
+}
+
+.settings-logo-preview {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-md);
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Storage Type Options ───────────────────────────────────── */
+.storage-type-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.storage-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #d0d0d0;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: #ffffff;
+}
+
+.storage-option:hover {
+    background: #f8f8f8;
+    border-color: #808080;
+}
+
+.storage-option.active {
+    border-color: #111111;
+    background: #f2f2f2;
+    color: #111111;
+}
+
+.storage-option input {
+    accent-color: #111111;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .settings-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .settings-tab-btn {
+        flex: 1;
+        min-width: 80px;
+        text-align: center;
+    }
+}

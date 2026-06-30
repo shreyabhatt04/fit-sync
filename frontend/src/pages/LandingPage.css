@@ -1,0 +1,4008 @@
+/* ============================================================
+   FITSYNC LANDING PAGE
+   Theme  : Soft dark (charcoal + teal) with floating gym motifs
+   Fonts  : Bebas Neue (display) + Inter (body)
+   Motion : orchestrated entrance + scroll-reveal + drifting icons
+============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+    --lp-black:     #0a0f0d;
+    --lp-900:       #0f1511;
+    --lp-800:       #151c18;
+    --lp-700:       #2b2b2b;
+    --lp-600:       #3d3d3d;
+    --lp-500:       #5c5c5c;
+    --lp-400:       #808080;
+    --lp-300:       #a8a8a8;
+    --lp-200:       #cfcfcf;
+    --lp-150:       #dedede;
+    --lp-100:       #ebebeb;
+    --lp-50:        #f4f4f4;
+    --lp-25:        #f9f9f9;
+    --lp-white:     #ffffff;
+
+    --lp-teal:      #10b981;
+    --lp-teal-2:    #059669;
+    --lp-teal-3:    #34d399;
+    --lp-teal-glow: rgba(16, 185, 129, 0.4);
+
+    --lp-font-d:    'Bebas Neue', 'Arial Narrow', sans-serif;
+    --lp-font-b:    'Inter', -apple-system, sans-serif;
+
+    --lp-radius:    10px;
+    --lp-radius-lg: 18px;
+    --lp-radius-xl: 26px;
+    --lp-trans:     0.25s ease;
+    --lp-trans-slow: 0.5s cubic-bezier(0.22,1,0.36,1);
+}
+
+/* ── Base ──────────────────────────────────────────────────── */
+.lp * { box-sizing: border-box; margin: 0; padding: 0; }
+
+.lp {
+    font-family: var(--lp-font-b);
+    /* Softer dark base with subtle teal wash at the top.
+       The radial gradient is drawn once; scroll stays dark below. */
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 30%, rgba(16, 185, 129, 0.05) 0%, transparent 45%),
+        linear-gradient(180deg, #0f1511 0%, #0a0f0d 60%, #080c0a 100%);
+    color: var(--lp-white);
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.lp a { text-decoration: none; color: inherit; }
+.lp button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+.lp-container { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+.lp-container--sm { max-width: 760px; }
+
+/* ═══════════════════════════════════════════════════════════
+   ANIMATIONS
+═══════════════════════════════════════════════════════════ */
+
+/* Entrance keyframes */
+@keyframes lpFadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lpFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes lpSlideRight {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes lpSlideLeft {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes lpScaleUp {
+    from { opacity: 0; transform: scale(0.92); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Ambient / looping */
+@keyframes lpFloat {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-14px); }
+}
+
+@keyframes lpRotateSlow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes lpMarquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@keyframes lpPulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.5; }
+}
+
+@keyframes lpScanline {
+    from { background-position: 0 0; }
+    to   { background-position: 0 100%; }
+}
+
+@keyframes lpCounterIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll-reveal classes */
+.lp-invisible { opacity: 0; transform: translateY(36px); }
+.lp-anim-up   { animation: lpFadeUp 0.75s cubic-bezier(0.22,1,0.36,1) forwards; }
+.lp-anim-fade { animation: lpFadeIn 0.75s ease forwards; }
+
+/* Stagger delays */
+.lp-d1  { animation-delay: 0.05s; }
+.lp-d2  { animation-delay: 0.12s; }
+.lp-d3  { animation-delay: 0.20s; }
+.lp-d4  { animation-delay: 0.30s; }
+.lp-d5  { animation-delay: 0.42s; }
+.lp-d6  { animation-delay: 0.56s; }
+
+/* ═══════════════════════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════════════════════ */
+.lp-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 900;
+    padding: 0;
+    transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+    animation: lpFadeIn 0.6s ease forwards;
+}
+
+.lp-nav--scrolled {
+    background: rgba(0,0,0,0.85);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+}
+
+.lp-nav__inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 28px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lp-nav__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lp-nav__brand-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--lp-white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+.lp-nav__brand:hover .lp-nav__brand-icon { transform: rotate(-6deg) scale(1.08); }
+
+.lp-nav__brand-name {
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--lp-white);
+}
+
+.lp-nav__links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lp-nav__link {
+    padding: 6px 14px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--lp-300);
+    border-radius: 6px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.lp-nav__link:hover {
+    color: var(--lp-white);
+    background: rgba(255,255,255,0.07);
+}
+
+.lp-nav__cta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border-radius: var(--lp-radius);
+    font-family: var(--lp-font-b);
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--lp-white);
+    background: transparent;
+    line-height: 1;
+}
+
+.lp-btn--ghost {
+    background: transparent;
+    color: var(--lp-300);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+.lp-btn--ghost:hover {
+    background: rgba(255,255,255,0.07);
+    color: var(--lp-white);
+    border-color: rgba(255,255,255,0.22);
+}
+
+.lp-btn--white {
+    background: var(--lp-teal);
+    color: var(--lp-white);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.32);
+}
+.lp-btn--white:hover {
+    background: var(--lp-teal-2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(16, 185, 129, 0.5);
+}
+
+.lp-btn--outline {
+    background: transparent;
+    color: var(--lp-white);
+    border: 1px solid rgba(255,255,255,0.30);
+}
+.lp-btn--outline:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.55);
+}
+
+.lp-btn--lg {
+    padding: 14px 32px;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.lp-btn--lg svg { width: 18px; height: 18px; }
+
+.lp-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 8px;
+}
+
+.lp-hamburger span {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background: var(--lp-300);
+    border-radius: 2px;
+    transition: background 0.2s ease;
+}
+.lp-hamburger:hover span { background: var(--lp-white); }
+
+/* ═══════════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════════ */
+.lp-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+    background: var(--lp-black);
+}
+
+/* Grid texture overlay */
+.lp-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    animation: lpFadeIn 2s ease forwards;
+}
+
+/* Radial glow top-left */
+.lp-hero::after {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.lp-hero__layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero badge */
+.lp-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lp-300);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    backdrop-filter: blur(10px);
+
+    opacity: 0;
+    animation: lpSlideRight 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s forwards;
+}
+
+.lp-hero__badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lp-white);
+    animation: lpPulse 2s ease infinite;
+}
+
+/* Main heading */
+.lp-hero__h1 {
+    font-family: var(--lp-font-d);
+    font-size: clamp(52px, 7vw, 96px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: var(--lp-white);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+
+    opacity: 0;
+    animation: lpFadeUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.2s forwards;
+}
+
+.lp-hero__h1-accent {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255,255,255,0.5);
+    display: block;
+}
+
+.lp-hero__para {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--lp-400);
+    line-height: 1.75;
+    max-width: 520px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+    animation: lpFadeUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
+}
+
+.lp-hero__actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+
+    opacity: 0;
+    animation: lpFadeUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.5s forwards;
+}
+
+.lp-hero__trust {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 36px;
+
+    opacity: 0;
+    animation: lpFadeIn 0.8s ease 0.75s forwards;
+}
+
+.lp-hero__trust-avatars {
+    display: flex;
+}
+
+.lp-hero__trust-av {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--lp-700);
+    border: 2px solid var(--lp-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--lp-300);
+    margin-left: -8px;
+}
+.lp-hero__trust-avatars .lp-hero__trust-av:first-child { margin-left: 0; }
+
+.lp-hero__trust-text {
+    font-size: 12.5px;
+    color: var(--lp-500);
+    font-weight: 500;
+}
+.lp-hero__trust-text strong { color: var(--lp-300); font-weight: 600; }
+
+/* Hero right — floating mockup */
+.lp-hero__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    animation: lpScaleUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s forwards;
+}
+
+.lp-hero__mock {
+    width: 100%;
+    max-width: 440px;
+    background: var(--lp-900);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
+    animation: lpFloat 6s ease-in-out infinite;
+}
+
+.lp-hero__mock-bar {
+    background: var(--lp-800);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lp-hero__mock-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.lp-hero__mock-dot:nth-child(1) { background: #ff5f57; }
+.lp-hero__mock-dot:nth-child(2) { background: #febc2e; }
+.lp-hero__mock-dot:nth-child(3) { background: #28c840; }
+
+.lp-hero__mock-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lp-hero__mock-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lp-hero__mock-stat {
+    flex: 1;
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.lp-hero__mock-stat-val {
+    font-family: var(--lp-font-d);
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--lp-white);
+    line-height: 1;
+}
+
+.lp-hero__mock-stat-lbl {
+    font-size: 11px;
+    color: var(--lp-500);
+    margin-top: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.lp-hero__mock-chart {
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.lp-hero__mock-chart-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 50px;
+}
+
+.lp-hero__mock-bar-item {
+    flex: 1;
+    background: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    transition: height 0.3s ease;
+}
+.lp-hero__mock-bar-item:last-child { background: var(--lp-white); }
+
+.lp-hero__mock-members {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lp-hero__mock-member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+}
+
+.lp-hero__mock-av {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--lp-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--lp-200);
+    flex-shrink: 0;
+}
+
+.lp-hero__mock-info { flex: 1; }
+
+.lp-hero__mock-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lp-200);
+    line-height: 1;
+}
+
+.lp-hero__mock-sub {
+    font-size: 10.5px;
+    color: var(--lp-500);
+    margin-top: 2px;
+}
+
+.lp-hero__mock-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    color: var(--lp-300);
+    border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* Floating chips around mock */
+.lp-hero__chip {
+    position: absolute;
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lp-200);
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.lp-hero__chip--1 {
+    top: -20px; right: -20px;
+    animation: lpFloat 5s ease-in-out 0.5s infinite;
+}
+
+.lp-hero__chip--2 {
+    bottom: 40px; left: -30px;
+    animation: lpFloat 7s ease-in-out 1s infinite;
+}
+
+.lp-hero__chip-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lp-white);
+}
+
+.lp-hero__chip-icon svg { width: 14px; height: 14px; }
+
+/* ═══════════════════════════════════════════════════════════
+   MARQUEE TICKER
+═══════════════════════════════════════════════════════════ */
+.lp-ticker {
+    background: var(--lp-white);
+    border-top: 1px solid var(--lp-200);
+    border-bottom: 1px solid var(--lp-200);
+    padding: 14px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lp-ticker__track {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    animation: lpMarquee 28s linear infinite;
+}
+
+.lp-ticker__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 32px;
+    font-family: var(--lp-font-d);
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    color: var(--lp-black);
+    text-transform: uppercase;
+}
+
+.lp-ticker__sep {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--lp-400);
+    flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   STATS
+═══════════════════════════════════════════════════════════ */
+.lp-stats {
+    padding: 80px 0;
+    background: var(--lp-900);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.lp-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.lp-stats__item {
+    padding: 32px 28px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+    text-align: center;
+}
+.lp-stats__item:last-child { border-right: none; }
+
+.lp-stats__val {
+    font-family: var(--lp-font-d);
+    font-size: 54px;
+    letter-spacing: 0.01em;
+    color: var(--lp-white);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.lp-stats__label {
+    font-size: 13px;
+    color: var(--lp-500);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FEATURES
+═══════════════════════════════════════════════════════════ */
+.lp-features {
+    padding: 110px 0;
+    background: var(--lp-black);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Large ghosted heading */
+.lp-features::before {
+    content: 'FEATURES';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--lp-font-d);
+    font-size: clamp(80px, 12vw, 160px);
+    color: rgba(255,255,255,0.03);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+.lp-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--lp-500);
+    margin-bottom: 14px;
+}
+
+.lp-section-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background: var(--lp-600);
+}
+
+.lp-section-h2 {
+    font-family: var(--lp-font-d);
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 400;
+    color: var(--lp-white);
+    line-height: 1.0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.lp-section-sub {
+    font-size: 16px;
+    color: var(--lp-500);
+    line-height: 1.7;
+    max-width: 540px;
+    font-weight: 400;
+}
+
+.lp-features__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 56px;
+}
+
+.lp-features__head-left { flex: 1; }
+
+.lp-features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.lp-feat-card {
+    background: var(--lp-900);
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.25s ease;
+    cursor: default;
+}
+
+.lp-feat-card:hover {
+    background: var(--lp-800);
+}
+
+/* Animated top-border on hover */
+.lp-feat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+.lp-feat-card:hover::before { transform: scaleX(1); }
+
+.lp-feat-card__icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lp-300);
+    margin-bottom: 20px;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+.lp-feat-card__icon svg { width: 20px; height: 20px; }
+.lp-feat-card:hover .lp-feat-card__icon {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.22);
+    color: var(--lp-white);
+}
+
+.lp-feat-card__tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--lp-600);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.lp-feat-card__title {
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    color: var(--lp-white);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.lp-feat-card__desc {
+    font-size: 14px;
+    color: var(--lp-500);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   STEPS / HOW IT WORKS
+═══════════════════════════════════════════════════════════ */
+.lp-steps {
+    padding: 110px 0;
+    background: var(--lp-25);
+    position: relative;
+    overflow: hidden;
+}
+
+.lp-steps .lp-section-label { color: var(--lp-400); }
+.lp-steps .lp-section-label::before { background: var(--lp-200); }
+.lp-steps .lp-section-h2 { color: var(--lp-black); }
+.lp-steps .lp-section-sub { color: var(--lp-500); }
+
+.lp-steps__head { text-align: center; margin-bottom: 64px; }
+
+.lp-steps__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+}
+
+/* Connecting line */
+.lp-steps__grid::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(12.5% + 20px);
+    right: calc(12.5% + 20px);
+    height: 1px;
+    background: linear-gradient(90deg, var(--lp-100), var(--lp-200), var(--lp-100));
+    pointer-events: none;
+}
+
+.lp-step-card {
+    background: var(--lp-white);
+    border: 1px solid var(--lp-100);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    position: relative;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.lp-step-card:hover {
+    border-color: var(--lp-200);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.lp-step-card__num {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--lp-black);
+    color: var(--lp-white);
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 3px solid var(--lp-25);
+    box-shadow: 0 0 0 1px var(--lp-100);
+    position: relative;
+    z-index: 1;
+}
+
+.lp-step-card__title {
+    font-family: var(--lp-font-d);
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: var(--lp-black);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.lp-step-card__desc {
+    font-size: 14px;
+    color: var(--lp-500);
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════════════════════════ */
+.lp-testimonials {
+    padding: 110px 0;
+    background: var(--lp-black);
+    position: relative;
+    overflow: hidden;
+}
+
+.lp-testimonials::before {
+    content: '"';
+    position: absolute;
+    top: -60px;
+    right: 80px;
+    font-family: var(--lp-font-d);
+    font-size: 400px;
+    color: rgba(255,255,255,0.02);
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+}
+
+.lp-testimonials__head { text-align: center; margin-bottom: 64px; }
+
+.lp-test__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.lp-test-card {
+    background: var(--lp-900);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--lp-radius-lg);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+    cursor: default;
+}
+.lp-test-card:hover {
+    border-color: rgba(255,255,255,0.16);
+    transform: translateY(-4px);
+}
+
+.lp-test-card__stars {
+    display: flex;
+    gap: 3px;
+    color: var(--lp-300);
+}
+.lp-test-card__stars svg { width: 14px; height: 14px; fill: currentColor; }
+
+.lp-test-card__text {
+    font-size: 15px;
+    color: var(--lp-300);
+    line-height: 1.75;
+    font-style: italic;
+    font-weight: 400;
+    flex: 1;
+}
+
+.lp-test-card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.lp-test-card__av {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--lp-700);
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--lp-200);
+    flex-shrink: 0;
+}
+
+.lp-test-card__name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--lp-200);
+    margin-bottom: 2px;
+}
+
+.lp-test-card__role {
+    font-size: 12px;
+    color: var(--lp-600);
+    font-weight: 400;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════════════════════ */
+.lp-faq {
+    padding: 110px 0;
+    background: var(--lp-25);
+}
+
+.lp-faq .lp-section-label { color: var(--lp-400); }
+.lp-faq .lp-section-label::before { background: var(--lp-200); }
+.lp-faq .lp-section-h2  { color: var(--lp-black); }
+
+.lp-faq__head { text-align: center; margin-bottom: 56px; }
+
+.lp-faq__list { display: flex; flex-direction: column; gap: 10px; }
+
+.lp-faq__item {
+    background: var(--lp-white);
+    border: 1px solid var(--lp-100);
+    border-radius: var(--lp-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.lp-faq__item:hover        { border-color: var(--lp-200); }
+.lp-faq__item--open        { border-color: var(--lp-300); }
+
+.lp-faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    gap: 16px;
+}
+.lp-faq__q span {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--lp-900);
+    line-height: 1.5;
+}
+
+.lp-faq__chevron {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--lp-50);
+    border: 1px solid var(--lp-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lp-500);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+.lp-faq__chevron svg { width: 14px; height: 14px; transition: transform 0.3s ease; }
+.lp-faq__item--open .lp-faq__chevron { background: var(--lp-black); color: var(--lp-white); border-color: var(--lp-black); }
+.lp-faq__item--open .lp-faq__chevron svg { transform: rotate(180deg); }
+
+.lp-faq__a { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.22,1,0.36,1); }
+.lp-faq__item--open .lp-faq__a { max-height: 200px; }
+.lp-faq__a p { padding: 0 24px 20px; font-size: 14px; color: var(--lp-500); line-height: 1.75; }
+
+/* ═══════════════════════════════════════════════════════════
+   CTA
+═══════════════════════════════════════════════════════════ */
+.lp-cta {
+    padding: 110px 0;
+    background: var(--lp-black);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scan-line grain texture */
+.lp-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255,255,255,0.015) 3px,
+        rgba(255,255,255,0.015) 4px
+    );
+    pointer-events: none;
+}
+
+/* White glow blob center */
+.lp-cta::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(255,255,255,0.04) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.lp-cta__inner {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.lp-cta__eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--lp-600);
+}
+
+.lp-cta__h2 {
+    font-family: var(--lp-font-d);
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 400;
+    color: var(--lp-white);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.05;
+    max-width: 700px;
+}
+
+.lp-cta__h2-line2 {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255,255,255,0.4);
+}
+
+.lp-cta__sub {
+    font-size: 16px;
+    color: var(--lp-500);
+    line-height: 1.7;
+    max-width: 500px;
+    font-weight: 400;
+}
+
+.lp-cta__actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.lp-cta__note {
+    font-size: 12.5px;
+    color: var(--lp-700);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.lp-cta__note svg { width: 14px; height: 14px; color: var(--lp-600); }
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════ */
+.lp-footer {
+    background: var(--lp-900);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 56px 0 32px;
+}
+
+.lp-footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.lp-footer__brand { max-width: 280px; }
+
+.lp-footer__brandname {
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--lp-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.lp-footer__brandname-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--lp-white);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.lp-footer__tagline {
+    font-size: 14px;
+    color: var(--lp-600);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.lp-footer__cols { display: flex; gap: 56px; }
+
+.lp-footer__col { display: flex; flex-direction: column; gap: 10px; }
+
+.lp-footer__col-head {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--lp-500);
+    margin-bottom: 4px;
+}
+
+.lp-footer__col-link {
+    font-size: 14px;
+    color: var(--lp-600);
+    transition: color 0.2s ease;
+    font-weight: 400;
+}
+.lp-footer__col-link:hover { color: var(--lp-white); }
+
+.lp-footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lp-footer__bottom-left {
+    font-size: 13px;
+    color: var(--lp-700);
+    font-weight: 400;
+}
+
+.lp-footer__bottom-right {
+    display: flex;
+    gap: 20px;
+}
+
+.lp-footer__bottom-link {
+    font-size: 13px;
+    color: var(--lp-700);
+    transition: color 0.2s ease;
+}
+.lp-footer__bottom-link:hover { color: var(--lp-400); }
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE MENU
+═══════════════════════════════════════════════════════════ */
+.lp-mobile-menu {
+    display: none;
+    position: fixed;
+    top: 68px; left: 0; right: 0;
+    background: rgba(0,0,0,0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    z-index: 800;
+    padding: 20px 28px 28px;
+    flex-direction: column;
+    gap: 4px;
+    animation: lpFadeUp 0.3s ease forwards;
+}
+.lp-mobile-menu--open { display: flex; }
+
+.lp-mobile-menu__link {
+    display: block;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--lp-400);
+    border-radius: 8px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.lp-mobile-menu__link:hover { color: var(--lp-white); background: rgba(255,255,255,0.06); }
+
+.lp-mobile-menu__divider {
+    height: 1px;
+    background: rgba(255,255,255,0.07);
+    margin: 10px 0;
+}
+
+.lp-mobile-menu__actions { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .lp-hero__layout       { grid-template-columns: 1fr; gap: 40px; }
+    .lp-hero__right        { display: none; }
+    .lp-features__grid     { grid-template-columns: repeat(2, 1fr); }
+    .lp-steps__grid        { grid-template-columns: repeat(2, 1fr); }
+    .lp-test__grid         { grid-template-columns: repeat(2, 1fr); }
+    .lp-stats__grid        { grid-template-columns: repeat(2, 1fr); }
+    .lp-stats__item:nth-child(2) { border-right: none; }
+    .lp-steps__grid::before { display: none; }
+    .lp-features__head     { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 768px) {
+    .lp-nav__links,
+    .lp-nav__cta          { display: none; }
+    .lp-hamburger         { display: flex; }
+
+    .lp-hero              { padding: 100px 0 60px; min-height: auto; }
+    .lp-hero__h1          { font-size: clamp(44px, 12vw, 64px); }
+    .lp-hero__para        { font-size: 15px; }
+
+    .lp-features,
+    .lp-steps,
+    .lp-testimonials,
+    .lp-faq,
+    .lp-cta               { padding: 72px 0; }
+
+    .lp-features__grid    { grid-template-columns: 1fr; }
+    .lp-steps__grid       { grid-template-columns: 1fr; }
+    .lp-test__grid        { grid-template-columns: 1fr; }
+
+    .lp-stats__grid        { grid-template-columns: repeat(2, 1fr); }
+    .lp-stats__item        { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .lp-stats__item:nth-last-child(-n+2) { border-bottom: none; }
+
+    .lp-footer__top        { flex-direction: column; }
+    .lp-footer__cols       { gap: 32px; flex-wrap: wrap; }
+    .lp-footer__bottom     { flex-direction: column; text-align: center; }
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   ADDENDUM — Classes used in JSX that need CSS definitions
+══════════════════════════════════════════════════════════════ */
+
+/* ── Nav solid state (JSX uses lp-nav--solid, CSS has lp-nav--scrolled) ── */
+.lp-nav--solid {
+    background: rgba(0,0,0,0.90);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+}
+
+/* ── Logo ──────────────────────────────────────────────────── */
+.lp-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.lp-logo__text {
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: var(--lp-white);
+    text-transform: uppercase;
+}
+.lp-nav--solid .lp-logo__text { color: var(--lp-white); }
+
+/* ── Pill button variant ───────────────────────────────────── */
+.lp-btn--pill {
+    background: var(--lp-white);
+    color: var(--lp-black) !important;
+    border-radius: 999px;
+    padding: 9px 22px;
+    border-color: var(--lp-white);
+    font-weight: 700;
+}
+.lp-btn--pill:hover {
+    background: var(--lp-100);
+    color: var(--lp-black) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(255,255,255,0.20);
+}
+
+/* ── Primary button ────────────────────────────────────────── */
+.lp-btn--primary {
+    background: var(--lp-white);
+    color: var(--lp-black) !important;
+    font-weight: 700;
+    border-color: var(--lp-white);
+}
+.lp-btn--primary:hover {
+    background: var(--lp-100);
+    color: var(--lp-black) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(255,255,255,0.20);
+}
+
+/* ── Glow button ───────────────────────────────────────────── */
+.lp-btn--glow {
+    background: var(--lp-white);
+    color: var(--lp-black) !important;
+    box-shadow: 0 0 24px rgba(255,255,255,0.20);
+    border-color: var(--lp-white);
+    font-weight: 700;
+}
+.lp-btn--glow:hover {
+    background: var(--lp-100);
+    color: var(--lp-black) !important;
+    box-shadow: 0 0 36px rgba(255,255,255,0.30);
+    transform: translateY(-1px);
+}
+
+/* ── Hero background blobs ─────────────────────────────────── */
+.lp-hero__blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    opacity: 0.6;
+    animation: lpFloat 8s ease-in-out infinite;
+}
+.lp-hero__blob--1 {
+    width: 500px; height: 500px;
+    top: -150px; left: -150px;
+    background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+    animation-delay: 0s;
+}
+.lp-hero__blob--2 {
+    width: 400px; height: 400px;
+    bottom: -100px; right: -100px;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+    animation-delay: 2s;
+}
+.lp-hero__blob--3 {
+    width: 300px; height: 300px;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%);
+    animation-delay: 4s;
+}
+
+/* ── Hero grid overlay ─────────────────────────────────────── */
+.lp-hero__grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+}
+
+/* ── Hero badge pulse dot ──────────────────────────────────── */
+.lp-hero__badge-pulse {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--lp-white);
+    flex-shrink: 0;
+    animation: lpPulse 2s ease infinite;
+}
+
+/* ── Hero social proof ─────────────────────────────────────── */
+.lp-hero__proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 36px;
+    opacity: 0;
+    animation: lpFadeIn 0.8s ease 0.75s forwards;
+}
+
+.lp-hero__avatars { display: flex; align-items: center; }
+
+.lp-hero__av {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--lp-700);
+    border: 2px solid var(--lp-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--lp-300);
+    position: relative;
+}
+
+.lp-hero__proof p {
+    font-size: 13px;
+    color: var(--lp-500);
+    font-weight: 500;
+}
+
+/* ── Hero scroll indicator ─────────────────────────────────── */
+.lp-hero__scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+    animation: lpFadeIn 1s ease 1.2s forwards;
+}
+
+.lp-hero__scroll-mouse {
+    width: 22px;
+    height: 34px;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.lp-hero__scroll-dot {
+    width: 3px;
+    height: 8px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 2px;
+    animation: lpScrollDot 2s ease infinite;
+}
+
+@keyframes lpScrollDot {
+    0%   { transform: translateY(0); opacity: 1; }
+    80%  { transform: translateY(8px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+/* ── Mockup widget (hero right panel) ──────────────────────── */
+.lp-mockup {
+    width: 100%;
+    max-width: 460px;
+    background: var(--lp-900);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+    animation: lpFloat 6s ease-in-out infinite;
+    position: relative;
+}
+
+.lp-mockup__bar {
+    background: var(--lp-800);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 11px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lp-mockup__dots {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+.lp-mockup__dots span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.lp-mockup__url {
+    font-size: 11px;
+    color: var(--lp-500);
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lp-mockup__body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Stat chips */
+.lp-mockup__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.lp-mockup__stat {
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.lp-mockup__stat-icon { font-size: 14px; line-height: 1; }
+.lp-mockup__stat-val  { font-family: var(--lp-font-d); font-size: 16px; letter-spacing: 0.03em; line-height: 1; }
+.lp-mockup__stat-label{ font-size: 9px; color: var(--lp-500); font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Chart */
+.lp-mockup__chart-label,
+.lp-mockup__members-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--lp-500);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.lp-mockup__chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 64px;
+}
+
+.lp-mockup__bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.lp-mockup__bar {
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px 3px 0 0;
+    transition: background 0.2s ease;
+    animation: lpBarGrow 0.6s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+@keyframes lpBarGrow {
+    from { transform: scaleY(0); transform-origin: bottom; }
+    to   { transform: scaleY(1); transform-origin: bottom; }
+}
+
+.lp-mockup__bar-wrap:last-child .lp-mockup__bar { background: rgba(255,255,255,0.85); }
+.lp-mockup__bar:hover { background: rgba(255,255,255,0.6); }
+
+.lp-mockup__bar-label {
+    font-size: 8px;
+    color: var(--lp-600);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Member rows */
+.lp-mockup__member-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 10px;
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 7px;
+}
+
+.lp-mockup__member-av {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--lp-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--lp-200);
+    flex-shrink: 0;
+}
+
+.lp-mockup__member-info { flex: 1; min-width: 0; }
+.lp-mockup__member-name { font-size: 11px; font-weight: 600; color: var(--lp-200); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lp-mockup__member-plan { font-size: 9.5px; color: var(--lp-500); margin-top: 1px; }
+
+.lp-mockup__member-badge {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.07);
+    color: var(--lp-300);
+    border: 1px solid rgba(255,255,255,0.10);
+    white-space: nowrap;
+}
+
+/* Floating chips */
+.lp-mockup__float {
+    position: absolute;
+    background: var(--lp-800);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 10px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+.lp-mockup__float:first-of-type { top: -16px; right: -16px; animation: lpFloat 5s ease-in-out 0.5s infinite; }
+.lp-mockup__float:last-of-type  { bottom: 30px; left: -20px; animation: lpFloat 7s ease-in-out 1s infinite; }
+
+.lp-mockup__float-val   { font-family: var(--lp-font-d); font-size: 18px; color: var(--lp-white); letter-spacing: 0.03em; line-height: 1; }
+.lp-mockup__float-label { font-size: 9px; color: var(--lp-500); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ── Section tag (used in features etc) ────────────────────── */
+.lp-section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--lp-500);
+    margin-bottom: 12px;
+}
+.lp-section-tag::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 1.5px;
+    background: var(--lp-600);
+}
+
+/* ── Stats number element ──────────────────────────────────── */
+.lp-stats__num {
+    font-family: var(--lp-font-d);
+    font-size: 54px;
+    letter-spacing: 0.01em;
+    color: var(--lp-white);
+    line-height: 1;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* ── Feature card subparts ─────────────────────────────────── */
+.lp-feat-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.lp-feat-card__arrow {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lp-600);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+.lp-feat-card:hover .lp-feat-card__arrow {
+    background: rgba(255,255,255,0.10);
+    border-color: rgba(255,255,255,0.20);
+    color: var(--lp-white);
+    transform: translate(2px, -2px);
+}
+.lp-feat-card__arrow svg { width: 12px; height: 12px; }
+
+/* ── Step card connector line ──────────────────────────────── */
+.lp-step-card__line {
+    position: absolute;
+    top: 25px;
+    left: calc(100% + 12px);
+    width: calc(100% - 24px);
+    height: 1px;
+    background: linear-gradient(90deg, var(--lp-200), var(--lp-100));
+}
+
+/* ── Testimonial quote mark ────────────────────────────────── */
+.lp-test-card__quote {
+    color: rgba(255,255,255,0.12);
+    font-size: 32px;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+/* ── CTA badge + blobs ─────────────────────────────────────── */
+.lp-cta__badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--lp-500);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 6px 16px;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+}
+
+.lp-cta__blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+}
+.lp-cta__blob--1 {
+    width: 500px; height: 500px;
+    top: -100px; left: -100px;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+}
+.lp-cta__blob--2 {
+    width: 400px; height: 400px;
+    bottom: -80px; right: -80px;
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, transparent 70%);
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   PRICING SECTION
+══════════════════════════════════════════════════════════════ */
+
+.lp-pricing {
+    padding: 110px 0;
+    background: var(--lp-25);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Large ghost watermark */
+.lp-pricing::before {
+    content: 'PRICING';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--lp-font-d);
+    font-size: clamp(70px, 11vw, 140px);
+    color: rgba(0,0,0,0.03);
+    white-space: nowrap;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+.lp-pricing__head {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Override section colors for light bg */
+.lp-pricing .lp-section-tag          { color: var(--lp-400); }
+.lp-pricing .lp-section-tag::before  { background: var(--lp-200); }
+.lp-pricing .lp-section-h2           { color: var(--lp-black); }
+
+.lp-pricing__sub {
+    font-size: 16px;
+    color: var(--lp-500);
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* ── Billing cycle toggle ──────────────────────────────────── */
+.lp-pricing__toggle-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.lp-pricing__toggle {
+    display: flex;
+    background: var(--lp-white);
+    border: 1px solid var(--lp-100);
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.lp-pricing__toggle-btn {
+    padding: 9px 20px;
+    border-radius: 7px;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--lp-400);
+    transition: all 0.15s ease;
+    font-family: var(--lp-font-b);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.lp-pricing__toggle-btn:hover { color: var(--lp-black); background: var(--lp-50); }
+.lp-pricing__toggle-btn.active {
+    background: var(--lp-black);
+    color: var(--lp-white);
+}
+
+.lp-pricing__badge {
+    font-size: 10.5px;
+    font-weight: 700;
+    background: #f0faf4;
+    color: #166035;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #bbf7d0;
+    white-space: nowrap;
+}
+.lp-pricing__toggle-btn.active .lp-pricing__badge {
+    background: rgba(255,255,255,0.15);
+    color: var(--lp-white);
+    border-color: rgba(255,255,255,0.3);
+}
+
+/* ── Module grid ───────────────────────────────────────────── */
+.lp-pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.lp-pricing__card {
+    background: var(--lp-white);
+    border: 1.5px solid var(--lp-100);
+    border-radius: 12px;
+    padding: 18px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    outline: none;
+}
+
+.lp-pricing__card:hover {
+    border-color: var(--lp-200);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+
+.lp-pricing__card--on {
+    border-color: var(--lp-black);
+    background: var(--lp-white);
+    box-shadow: 0 0 0 1px var(--lp-black), 0 4px 14px rgba(0,0,0,0.10);
+}
+
+.lp-pricing__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.lp-pricing__check {
+    width: 22px;
+    height: 22px;
+    color: var(--lp-150);
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+}
+.lp-pricing__check svg { width: 22px; height: 22px; }
+.lp-pricing__card--on .lp-pricing__check { color: var(--lp-black); }
+
+.lp-pricing__price {
+    font-family: var(--lp-font-d);
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    color: var(--lp-black);
+    line-height: 1;
+}
+.lp-pricing__price span {
+    font-family: var(--lp-font-b);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--lp-400);
+    margin-left: 2px;
+}
+
+.lp-pricing__card-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--lp-black);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.lp-pricing__card-desc {
+    font-size: 12px;
+    color: var(--lp-400);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.lp-pricing__core-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 9.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--lp-400);
+    background: var(--lp-50);
+    border: 1px solid var(--lp-100);
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+.lp-pricing__card--on .lp-pricing__core-tag {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.10);
+    color: var(--lp-600);
+}
+
+/* ── Summary bar ───────────────────────────────────────────── */
+.lp-pricing__summary {
+    background: var(--lp-white);
+    border: 1px solid var(--lp-100);
+    border-radius: 16px;
+    padding: 22px 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.lp-pricing__summary-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.lp-pricing__summary-count {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--lp-black);
+    margin-bottom: 4px;
+}
+
+.lp-pricing__summary-note {
+    font-size: 13px;
+    color: var(--lp-400);
+    font-weight: 400;
+}
+
+.lp-pricing__summary-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.lp-pricing__total {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.lp-pricing__total-label {
+    font-size: 14px;
+    color: var(--lp-400);
+    font-weight: 500;
+}
+
+.lp-pricing__total-amount {
+    font-family: var(--lp-font-d);
+    font-size: 36px;
+    color: var(--lp-black);
+    letter-spacing: 0.02em;
+    line-height: 1;
+}
+
+.lp-pricing__total-cycle {
+    font-size: 14px;
+    color: var(--lp-400);
+    font-weight: 500;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .lp-pricing__grid          { grid-template-columns: repeat(2, 1fr); }
+    .lp-pricing__summary-inner { flex-direction: column; align-items: flex-start; }
+    .lp-pricing__summary-right { width: 100%; justify-content: space-between; }
+}
+
+@media (max-width: 600px) {
+    .lp-pricing                { padding: 72px 0; }
+    .lp-pricing__grid          { grid-template-columns: 1fr 1fr; }
+    .lp-pricing__toggle        { flex-wrap: wrap; }
+    .lp-pricing__summary       { padding: 18px 18px; }
+    .lp-pricing__summary-right { flex-direction: column; gap: 16px; }
+    .lp-pricing__summary-right .lp-btn { width: 100%; justify-content: center; }
+}
+
+/* ── 3-TIER PLAN CARDS ──────────────────────────────────────── */
+.lp-plans__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+    align-items: start;
+}
+
+.lp-plan-card {
+    background: var(--lp-surface, #ffffff);
+    border: 1px solid var(--lp-border, #e5e7eb);
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.lp-plan-card:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+    transform: translateY(-4px);
+}
+
+.lp-plan-card--popular {
+    border: 2px solid var(--lp-accent, #2563eb);
+    box-shadow: 0 8px 32px rgba(37,99,235,0.12);
+}
+
+.lp-plan-card__popular-tag {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--lp-accent, #2563eb);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 16px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.lp-plan-card__name {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--lp-accent, #2563eb);
+    margin-bottom: 12px;
+}
+
+.lp-plan-card__price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.lp-plan-card__amount {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--lp-black, #111827);
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.lp-plan-card__cycle {
+    font-size: 14px;
+    color: var(--lp-text-sub, #6b7280);
+    font-weight: 400;
+}
+
+.lp-plan-card__desc {
+    font-size: 14px;
+    color: var(--lp-text-sub, #6b7280);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.lp-plan-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--lp-border, #e5e7eb);
+    padding-top: 20px;
+}
+
+.lp-plan-card__feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--lp-text, #374151);
+    font-weight: 400;
+}
+
+.lp-plan-card__feature svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--lp-accent, #2563eb);
+    opacity: 0.7;
+}
+
+.lp-plan-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: center;
+    transition: all 0.2s ease;
+    margin-top: auto;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lp-plan-card__btn--outline {
+    background: var(--lp-surface, #ffffff);
+    color: var(--lp-black, #111827);
+    border: 1.5px solid var(--lp-border-h, #d1d5db);
+}
+
+.lp-plan-card__btn--outline:hover {
+    background: var(--lp-50, #f8f9fa);
+    border-color: #9ca3af;
+}
+
+.lp-plan-card__btn--primary {
+    background: var(--lp-accent, #2563eb);
+    color: #ffffff;
+    border: 1.5px solid var(--lp-accent, #2563eb);
+}
+
+.lp-plan-card__btn--primary:hover {
+    background: var(--lp-accent-dark, #1d4ed8);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(37,99,235,0.30);
+}
+
+@media (max-width: 900px) {
+    .lp-plans__grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .lp-plan-card--popular { margin-top: 16px; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FLOATING GYM ICONS BACKGROUND
+   Fixed-position overlay with SVG gym motifs drifting across
+   the viewport. Pure CSS. Respects prefers-reduced-motion.
+═══════════════════════════════════════════════════════════ */
+
+.lp-bg-icons {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.lp-bg-icons__item {
+    position: absolute;
+    color: var(--lp-teal);
+    opacity: 0.08;
+    will-change: transform;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.25));
+}
+
+.lp-bg-icons__item svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Individual icon placements + motion tracks.
+   Each drifts slowly with a unique path and duration to avoid
+   any two icons ever looking synced. Offsets keep them spread
+   across the viewport at all times. */
+
+.lp-bg-icons__item:nth-child(1) {
+    top: 8%; left: 4%;
+    width: 68px; height: 68px;
+    animation: lpDrift1 38s infinite;
+}
+.lp-bg-icons__item:nth-child(2) {
+    top: 18%; right: 7%;
+    width: 54px; height: 54px;
+    animation: lpDrift2 44s infinite;
+    animation-delay: -6s;
+    opacity: 0.06;
+}
+.lp-bg-icons__item:nth-child(3) {
+    top: 55%; left: 8%;
+    width: 80px; height: 80px;
+    animation: lpDrift3 50s infinite;
+    animation-delay: -18s;
+    opacity: 0.07;
+}
+.lp-bg-icons__item:nth-child(4) {
+    top: 68%; right: 10%;
+    width: 62px; height: 62px;
+    animation: lpDrift1 42s infinite reverse;
+    animation-delay: -12s;
+}
+.lp-bg-icons__item:nth-child(5) {
+    top: 32%; left: 42%;
+    width: 48px; height: 48px;
+    animation: lpDrift4 35s infinite;
+    animation-delay: -4s;
+    opacity: 0.05;
+}
+.lp-bg-icons__item:nth-child(6) {
+    top: 82%; left: 30%;
+    width: 56px; height: 56px;
+    animation: lpDrift2 40s infinite reverse;
+    animation-delay: -22s;
+    opacity: 0.07;
+}
+.lp-bg-icons__item:nth-child(7) {
+    top: 5%; left: 60%;
+    width: 44px; height: 44px;
+    animation: lpDrift3 46s infinite reverse;
+    animation-delay: -8s;
+    opacity: 0.05;
+}
+.lp-bg-icons__item:nth-child(8) {
+    top: 48%; right: 35%;
+    width: 72px; height: 72px;
+    animation: lpDrift4 52s infinite reverse;
+    animation-delay: -30s;
+    opacity: 0.06;
+}
+
+/* Drift paths — gentle loops so nothing feels like "movement",
+   just a living background. rotate makes the icons feel weightless. */
+
+@keyframes lpDrift1 {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(60px, -40px) rotate(8deg); }
+    50%  { transform: translate(120px, 30px) rotate(-6deg); }
+    75%  { transform: translate(40px, 70px) rotate(4deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes lpDrift2 {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    33%  { transform: translate(-50px, 50px) rotate(-10deg); }
+    66%  { transform: translate(-90px, -30px) rotate(6deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes lpDrift3 {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    20%  { transform: translate(80px, 30px) rotate(5deg); }
+    50%  { transform: translate(30px, 90px) rotate(-8deg); }
+    80%  { transform: translate(-60px, 50px) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes lpDrift4 {
+    0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+    25%  { transform: translate(40px, -60px) rotate(-12deg) scale(1.05); }
+    50%  { transform: translate(-30px, -80px) rotate(8deg) scale(0.95); }
+    75%  { transform: translate(-70px, 20px) rotate(-4deg) scale(1.02); }
+    100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+}
+
+/* Make sure real content sits above the background layer. */
+.lp-nav,
+.lp-hero,
+.lp-features,
+.lp-stats,
+.lp-plans,
+.lp-how,
+.lp-testimonials,
+.lp-faq,
+.lp-cta,
+.lp-footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Accessibility: users who disable motion see static icons (no drift). */
+@media (prefers-reduced-motion: reduce) {
+    .lp-bg-icons__item {
+        animation: none !important;
+    }
+}
+
+/* Hide the icon layer entirely on small screens — phones don't need
+   extra GPU work and the icons clutter narrow viewports. */
+@media (max-width: 600px) {
+    .lp-bg-icons {
+        display: none;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ILLUSTRATED GYM SCENE (hero background)
+   Replaces the old `.lp-bg-icons` floating-icons layer.
+   Fixed-position so it stays in view while the user scrolls
+   through the hero. Hides on phones for perf + readability.
+═══════════════════════════════════════════════════════════ */
+.lp-hero-scene {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.lp-hero-scene > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Soften the scene a bit so it doesn't overwhelm content. */
+.lp-hero-scene::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 15, 30, 0) 0%,
+        rgba(10, 15, 30, 0.25) 60%,
+        rgba(10, 15, 30, 0.6) 100%
+    );
+    pointer-events: none;
+}
+
+/* CRITICAL — the hero's own background was covering our scene.
+   Make it transparent and put content on top. */
+.lp-hero {
+    background: transparent !important;
+}
+
+/* Also need the .lp root to be transparent where the scene shows through.
+   The scene sits behind everything via z-index: 0. */
+.lp-hero > *,
+.lp-hero .lp-container,
+.lp-hero__layout {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar stays above the scene */
+.lp-nav {
+    position: fixed;
+    z-index: 10;
+}
+
+/* Hide the scene on small screens — phones render it too small to
+   read and it eats GPU. We keep the teal gradient + dark bg instead. */
+@media (max-width: 768px) {
+    .lp-hero-scene { display: none; }
+    .lp-hero { background: var(--lp-black) !important; }
+}
+
+/* Strip the old hero grid overlay since the scene provides its own
+   texture. Keeps hero content legible over the scene. */
+.lp-hero::before { display: none; }
+
+/* ═══════════════════════════════════════════════════════════
+   THEME UNIFICATION — BATCH 8a-3
+   Turns every light section into a dark variant that shares
+   the hero's midnight-navy + teal + amber palette, so the
+   whole landing feels like one continuous theme top-to-bottom.
+
+   The tokens used here are defined in `:root` (lp-black/900/800
+   + lp-teal/teal-2/teal-3) from Batch 8a.
+═══════════════════════════════════════════════════════════ */
+
+/* ── Shared dark-section base colors ── */
+:root {
+    --lp-darkbg-a: #0d1420;   /* slightly warmer than hero sky */
+    --lp-darkbg-b: #0a1018;   /* deeper, for alternating bands */
+    --lp-darkcard: #141d2e;   /* card surface on dark bg */
+    --lp-darkcard-h: #1a2438; /* card hover */
+    --lp-darkborder: rgba(255,255,255,0.08);
+    --lp-darkborder-h: rgba(16,185,129,0.30);
+    --lp-darktext: #d8dde5;
+    --lp-darktext-dim: #8a95a8;
+    --lp-darktext-faint: #5e6878;
+}
+
+/* ───────────────── TICKER — dark strip ───────────────── */
+.lp-ticker {
+    background: var(--lp-darkbg-b) !important;
+    border-top: 1px solid var(--lp-darkborder) !important;
+    border-bottom: 1px solid var(--lp-darkborder) !important;
+}
+.lp-ticker__item {
+    color: var(--lp-darktext) !important;
+}
+.lp-ticker__sep {
+    background: var(--lp-teal) !important;
+    opacity: 0.6;
+}
+
+/* ───────────────── STEPS (How It Works) — dark ───────────────── */
+.lp-steps {
+    background: var(--lp-darkbg-a) !important;
+}
+.lp-steps .lp-section-label { color: var(--lp-teal-3) !important; }
+.lp-steps .lp-section-label::before { background: var(--lp-teal) !important; }
+.lp-steps .lp-section-h2 { color: var(--lp-white) !important; }
+.lp-steps .lp-section-sub { color: var(--lp-darktext-dim) !important; }
+
+.lp-steps__grid::before {
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(16,185,129,0.35),
+        transparent) !important;
+}
+
+.lp-step-card {
+    background: var(--lp-darkcard) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+}
+.lp-step-card:hover {
+    border-color: var(--lp-darkborder-h) !important;
+    box-shadow: 0 12px 36px rgba(16,185,129,0.10) !important;
+}
+
+.lp-step-card__num {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    border: 3px solid var(--lp-darkbg-a) !important;
+    box-shadow: 0 0 0 1px rgba(16,185,129,0.35),
+                0 0 20px rgba(16,185,129,0.35) !important;
+}
+
+.lp-step-card__title {
+    color: var(--lp-white) !important;
+}
+.lp-step-card__desc {
+    color: var(--lp-darktext-dim) !important;
+}
+
+/* ───────────────── FAQ — dark ───────────────── */
+.lp-faq {
+    background: var(--lp-darkbg-b) !important;
+}
+.lp-faq .lp-section-label { color: var(--lp-teal-3) !important; }
+.lp-faq .lp-section-label::before { background: var(--lp-teal) !important; }
+.lp-faq .lp-section-h2 { color: var(--lp-white) !important; }
+
+.lp-faq__item {
+    background: var(--lp-darkcard) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+}
+.lp-faq__item:hover { border-color: var(--lp-darkborder-h) !important; }
+.lp-faq__item--open { border-color: var(--lp-teal) !important; }
+
+.lp-faq__q span {
+    color: var(--lp-white) !important;
+}
+
+.lp-faq__chevron {
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+    color: var(--lp-darktext-dim) !important;
+}
+.lp-faq__item--open .lp-faq__chevron {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    border-color: var(--lp-teal) !important;
+}
+
+.lp-faq__a p {
+    color: var(--lp-darktext-dim) !important;
+}
+
+/* ───────────────── PRICING — dark ───────────────── */
+.lp-pricing {
+    background: var(--lp-darkbg-a) !important;
+}
+.lp-pricing::before {
+    color: rgba(255,255,255,0.03) !important;
+}
+.lp-pricing .lp-section-tag          { color: var(--lp-teal-3) !important; }
+.lp-pricing .lp-section-tag::before  { background: var(--lp-teal) !important; }
+.lp-pricing .lp-section-h2           { color: var(--lp-white) !important; }
+.lp-pricing__sub                     { color: var(--lp-darktext-dim) !important; }
+
+/* Billing toggle */
+.lp-pricing__toggle {
+    background: var(--lp-darkcard) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+    box-shadow: none !important;
+}
+.lp-pricing__toggle-btn {
+    color: var(--lp-darktext-dim) !important;
+}
+.lp-pricing__toggle-btn:hover {
+    color: var(--lp-white) !important;
+    background: rgba(255,255,255,0.04) !important;
+}
+.lp-pricing__toggle-btn.active {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+}
+.lp-pricing__badge {
+    background: rgba(16,185,129,0.15) !important;
+    color: var(--lp-teal-3) !important;
+    border: 1px solid rgba(16,185,129,0.35) !important;
+}
+
+/* Module cards (small, 3-col selectable modules) */
+.lp-pricing__card {
+    background: var(--lp-darkcard) !important;
+    border: 1.5px solid var(--lp-darkborder) !important;
+    box-shadow: none !important;
+}
+.lp-pricing__card:hover {
+    border-color: var(--lp-darkborder-h) !important;
+    box-shadow: 0 4px 14px rgba(16,185,129,0.10) !important;
+}
+.lp-pricing__card--on {
+    border-color: var(--lp-teal) !important;
+    background: var(--lp-darkcard-h) !important;
+    box-shadow: 0 0 0 1px var(--lp-teal),
+                0 8px 24px rgba(16,185,129,0.20) !important;
+}
+.lp-pricing__check { color: rgba(255,255,255,0.20) !important; }
+.lp-pricing__card--on .lp-pricing__check { color: var(--lp-teal) !important; }
+.lp-pricing__price { color: var(--lp-white) !important; }
+.lp-pricing__price span { color: var(--lp-darktext-dim) !important; }
+.lp-pricing__card-label { color: var(--lp-white) !important; }
+.lp-pricing__card-desc { color: var(--lp-darktext-dim) !important; }
+.lp-pricing__core-tag {
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+    color: var(--lp-darktext-dim) !important;
+}
+.lp-pricing__card--on .lp-pricing__core-tag {
+    background: rgba(16,185,129,0.15) !important;
+    border-color: rgba(16,185,129,0.35) !important;
+    color: var(--lp-teal-3) !important;
+}
+
+/* Summary bar */
+.lp-pricing__summary {
+    background: var(--lp-darkcard) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+}
+.lp-pricing__summary-count { color: var(--lp-white) !important; }
+.lp-pricing__summary-note { color: var(--lp-darktext-dim) !important; }
+.lp-pricing__total-label { color: var(--lp-darktext-dim) !important; }
+.lp-pricing__total-amount { color: var(--lp-white) !important; }
+.lp-pricing__total-cycle { color: var(--lp-darktext-dim) !important; }
+
+/* ── 3-tier plan cards (STARTER / GROWTH / PRO) ── */
+.lp-plan-card {
+    background: var(--lp-darkcard) !important;
+    border: 1px solid var(--lp-darkborder) !important;
+}
+.lp-plan-card:hover {
+    box-shadow: 0 12px 40px rgba(16,185,129,0.12) !important;
+    border-color: var(--lp-darkborder-h) !important;
+}
+.lp-plan-card--popular {
+    border: 2px solid var(--lp-teal) !important;
+    box-shadow: 0 8px 32px rgba(16,185,129,0.20) !important;
+    background: var(--lp-darkcard-h) !important;
+}
+.lp-plan-card__popular-tag {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+}
+.lp-plan-card__name {
+    color: var(--lp-teal-3) !important;
+}
+.lp-plan-card__amount {
+    color: var(--lp-white) !important;
+}
+.lp-plan-card__cycle { color: var(--lp-darktext-dim) !important; }
+.lp-plan-card__desc { color: var(--lp-darktext-dim) !important; }
+.lp-plan-card__features {
+    border-top: 1px solid var(--lp-darkborder) !important;
+}
+.lp-plan-card__feature {
+    color: var(--lp-darktext) !important;
+}
+.lp-plan-card__feature svg {
+    color: var(--lp-teal) !important;
+    opacity: 1 !important;
+}
+.lp-plan-card__btn--outline {
+    background: transparent !important;
+    color: var(--lp-white) !important;
+    border: 1.5px solid rgba(255,255,255,0.25) !important;
+}
+.lp-plan-card__btn--outline:hover {
+    background: rgba(255,255,255,0.05) !important;
+    border-color: var(--lp-teal) !important;
+    color: var(--lp-teal-3) !important;
+}
+.lp-plan-card__btn--primary {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    border: 1.5px solid var(--lp-teal) !important;
+}
+.lp-plan-card__btn--primary:hover {
+    background: var(--lp-teal-2) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(16,185,129,0.40) !important;
+}
+
+/* ───────────────── SCENE CONFINED TO HERO ─────────────────
+   Scene was `position: fixed` — covering the whole viewport
+   even after scrolling. Now it's absolute inside .lp-hero so
+   it only shows in hero and scrolls away naturally. */
+.lp-hero {
+    position: relative !important;
+    overflow: hidden;
+}
+.lp-hero-scene {
+    position: absolute !important;
+    inset: 0 !important;
+}
+/* Soft fade at the scene's bottom so it blends into dark sections below */
+.lp-hero-scene::after {
+    background: linear-gradient(
+        180deg,
+        rgba(10, 15, 30, 0) 0%,
+        rgba(10, 15, 30, 0.30) 55%,
+        var(--lp-darkbg-b) 100%
+    ) !important;
+}
+
+/* ───────────────── SHARED SECTION POLISH ───────────────── */
+/* Subtle border between dark sections so they don't blur together */
+.lp-features,
+.lp-stats,
+.lp-steps,
+.lp-testimonials,
+.lp-faq,
+.lp-pricing,
+.lp-cta {
+    border-top: 1px solid var(--lp-darkborder);
+}
+
+/* ───────────────── HERO LAYOUT — text on left, scene fills right ─────────────────
+   With the mockup card removed, the grid collapses. Make left column
+   take ~55% of width; right ~45% stays as empty visual space where the
+   scene's equipment (treadmill/runner/plates) will be most visible. */
+.lp-hero__layout {
+    grid-template-columns: minmax(0, 55%) 1fr !important;
+    gap: 40px !important;
+}
+
+/* On narrower screens, stack and let text span full width */
+@media (max-width: 900px) {
+    .lp-hero__layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BATCH 8a-4 — TEAL ACCENTS EVERYWHERE
+   Adds teal accents to the already-dark sections that Batch 8a
+   missed: nav, stats, features, testimonials, CTA, footer.
+   Keeps the existing dark bg; just injects teal on icons,
+   numbers, avatars, CTAs, borders so the whole page feels
+   like one continuous teal-accented theme.
+═══════════════════════════════════════════════════════════ */
+
+/* ── NAV: primary CTA button → teal ── */
+.lp-nav__cta .lp-btn--white,
+.lp-nav .lp-btn--white {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25) !important;
+}
+.lp-nav__cta .lp-btn--white:hover,
+.lp-nav .lp-btn--white:hover {
+    background: var(--lp-teal-2) !important;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Nav "Sign In" link — subtle teal hover */
+.lp-nav__link:hover {
+    color: var(--lp-teal-3) !important;
+}
+
+/* Nav brand logo icon — tint teal */
+.lp-nav__brand-icon {
+    color: var(--lp-teal) !important;
+}
+
+/* ── HERO: Badge + scroll indicator ── */
+.lp-hero__badge {
+    border-color: rgba(16, 185, 129, 0.28) !important;
+    background: rgba(16, 185, 129, 0.08) !important;
+    color: var(--lp-teal-3) !important;
+}
+.lp-hero__badge-pulse {
+    background: var(--lp-teal) !important;
+    box-shadow: 0 0 10px var(--lp-teal) !important;
+}
+
+/* Hero primary CTA button */
+.lp-hero .lp-btn--white {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 6px 24px rgba(16, 185, 129, 0.32) !important;
+}
+.lp-hero .lp-btn--white:hover {
+    background: var(--lp-teal-2) !important;
+    box-shadow: 0 10px 32px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Hero outline CTA: teal hover */
+.lp-hero .lp-btn--outline:hover {
+    border-color: var(--lp-teal) !important;
+    color: var(--lp-teal-3) !important;
+    background: rgba(16, 185, 129, 0.05) !important;
+}
+
+/* Scroll indicator at bottom of hero */
+.lp-hero__scroll-mouse {
+    border-color: var(--lp-teal) !important;
+}
+.lp-hero__scroll-mouse::after,
+.lp-hero__scroll-wheel {
+    background: var(--lp-teal) !important;
+}
+.lp-hero__scroll-label {
+    color: var(--lp-teal-3) !important;
+}
+
+/* ── STATS: big numbers turn teal ── */
+.lp-stats__val {
+    color: var(--lp-teal-3) !important;
+    text-shadow: 0 0 30px rgba(16, 185, 129, 0.25);
+}
+
+.lp-stats__item {
+    border-right-color: rgba(16, 185, 129, 0.10) !important;
+}
+
+/* ── FEATURES: icon + tag + hover border → teal ── */
+.lp-features__head .lp-section-label { color: var(--lp-teal-3) !important; }
+.lp-features__head .lp-section-label::before { background: var(--lp-teal) !important; }
+
+.lp-feat-card:hover {
+    border-color: rgba(16, 185, 129, 0.35) !important;
+    box-shadow: 0 12px 36px rgba(16, 185, 129, 0.14) !important;
+}
+.lp-feat-card::before {
+    background: var(--lp-teal) !important;
+}
+
+.lp-feat-card__icon {
+    background: rgba(16, 185, 129, 0.12) !important;
+    border: 1px solid rgba(16, 185, 129, 0.28) !important;
+    color: var(--lp-teal-3) !important;
+}
+.lp-feat-card:hover .lp-feat-card__icon {
+    background: rgba(16, 185, 129, 0.22) !important;
+    border-color: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 0 24px rgba(16, 185, 129, 0.35);
+}
+
+.lp-feat-card__tag {
+    color: var(--lp-teal-3) !important;
+    opacity: 0.75;
+}
+
+/* Arrow icon at bottom of each feature card */
+.lp-feat-card__arrow,
+.lp-feat-card svg:last-child {
+    color: var(--lp-teal-3) !important;
+    opacity: 0.55;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.lp-feat-card:hover .lp-feat-card__arrow,
+.lp-feat-card:hover svg:last-child {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+/* ── TESTIMONIALS: quote icons + avatars + card borders ── */
+.lp-testimonials .lp-section-tag { color: var(--lp-teal-3) !important; }
+.lp-testimonials .lp-section-tag::before { background: var(--lp-teal) !important; }
+
+.lp-test-card:hover {
+    border-color: rgba(16, 185, 129, 0.30) !important;
+    box-shadow: 0 12px 36px rgba(16, 185, 129, 0.12) !important;
+}
+
+/* Quote mark icons */
+.lp-test-card__quote {
+    color: var(--lp-teal) !important;
+    opacity: 0.85;
+}
+
+/* Stars */
+.lp-test-card__stars {
+    color: var(--lp-teal-3) !important;
+}
+
+/* Avatar circles (RP/PS/AV/MK) */
+.lp-test-card__av {
+    background: linear-gradient(135deg, var(--lp-teal) 0%, var(--lp-teal-2) 100%) !important;
+    border-color: rgba(16, 185, 129, 0.45) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.30) !important;
+}
+
+/* Also for the tiny "trusted by" avatars at bottom of hero */
+.lp-hero__avatars .lp-hero__avatar,
+.lp-hero__av {
+    background: linear-gradient(135deg, var(--lp-teal) 0%, var(--lp-teal-2) 100%) !important;
+    border-color: rgba(16, 185, 129, 0.40) !important;
+    color: var(--lp-white) !important;
+}
+
+/* ── CTA SECTION: big dumbbell icon + button + glow ── */
+/* Center glow blob turns teal */
+.lp-cta::after {
+    background: radial-gradient(ellipse, rgba(16, 185, 129, 0.12) 0%, transparent 70%) !important;
+}
+
+.lp-cta__eyebrow {
+    color: var(--lp-teal-3) !important;
+    opacity: 0.85;
+}
+
+/* The big outline gym icon at top */
+.lp-cta svg {
+    color: var(--lp-teal) !important;
+}
+
+/* Stroke-text effect on 2nd line — use teal stroke */
+.lp-cta__h2-line2 {
+    -webkit-text-stroke: 1.5px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Primary CTA button in this section */
+.lp-cta .lp-btn--white {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 6px 28px rgba(16, 185, 129, 0.4) !important;
+}
+.lp-cta .lp-btn--white:hover {
+    background: var(--lp-teal-2) !important;
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.55) !important;
+}
+
+/* Outline "Sign In Instead" */
+.lp-cta .lp-btn--outline:hover {
+    border-color: var(--lp-teal) !important;
+    color: var(--lp-teal-3) !important;
+    background: rgba(16, 185, 129, 0.05) !important;
+}
+
+/* "Zero setup cost" note */
+.lp-cta__note {
+    color: var(--lp-teal-3) !important;
+    opacity: 0.6;
+}
+.lp-cta__note svg {
+    color: var(--lp-teal) !important;
+}
+
+/* ── FOOTER: brand icon + column heads + link hover ── */
+.lp-footer__brandname-icon {
+    background: var(--lp-teal) !important;
+    color: var(--lp-white) !important;
+    box-shadow: 0 2px 12px rgba(16, 185, 129, 0.35) !important;
+}
+
+.lp-footer__col-head {
+    color: var(--lp-teal-3) !important;
+}
+
+.lp-footer__col-link:hover {
+    color: var(--lp-teal-3) !important;
+}
+
+.lp-footer__bottom-link:hover {
+    color: var(--lp-teal-3) !important;
+}
+
+/* ── SECTION TAG LABELS — apply teal globally to dark sections ── */
+.lp-features .lp-section-tag,
+.lp-stats .lp-section-tag,
+.lp-testimonials .lp-section-tag {
+    color: var(--lp-teal-3) !important;
+}
+.lp-features .lp-section-tag::before,
+.lp-stats .lp-section-tag::before,
+.lp-testimonials .lp-section-tag::before {
+    background: var(--lp-teal) !important;
+}
+
+/* ── Restore hero with a subtle teal glow bg (scene removed) ── */
+.lp-hero {
+    position: relative;
+    background:
+        radial-gradient(ellipse at 70% 30%, rgba(16, 185, 129, 0.10) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 70%, rgba(16, 185, 129, 0.06) 0%, transparent 50%),
+        linear-gradient(180deg, #0d1420 0%, #0a1018 100%) !important;
+    overflow: hidden;
+}
+
+/* Hero grid overlay — re-enable with teal tint */
+.lp-hero::before {
+    display: block !important;
+    content: '' !important;
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.04) 1px, transparent 1px) !important;
+    background-size: 60px 60px !important;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.lp-hero::after {
+    background: radial-gradient(
+        circle at 80% 30%,
+        rgba(16, 185, 129, 0.08) 0%,
+        transparent 60%
+    ) !important;
+}
+
+/* Bring hero content above the grid overlay */
+.lp-hero__layout,
+.lp-hero__left,
+.lp-hero__right {
+    position: relative;
+    z-index: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BATCH 8b-4 — MOBILE RESPONSIVE FIXES
+   Uses the EXISTING .lp-mobile-menu overlay (already in JSX)
+   and fixes its display + styling. Also adds missing mobile
+   polish for hero, CTA, stats, footer, etc.
+═══════════════════════════════════════════════════════════ */
+
+/* ── MOBILE NAV — the JSX already conditionally renders
+      <div className="lp-mobile-menu"> when menuOpen is true, but
+      the existing CSS has display:none by default, so it was
+      invisible. Fix: render as flex whenever it exists in DOM. */
+.lp-mobile-menu {
+    display: flex !important;
+    top: 64px !important;   /* below the nav bar */
+    left: 0;
+    right: 0;
+    background: rgba(10, 16, 24, 0.97) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(16, 185, 129, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+    padding: 16px 20px 20px !important;
+}
+
+.lp-mobile-menu__link {
+    padding: 13px 14px !important;
+    font-size: 15px !important;
+    color: var(--lp-200) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px !important;
+}
+.lp-mobile-menu__link:last-of-type {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 8px;
+}
+.lp-mobile-menu__link:hover,
+.lp-mobile-menu__link:active {
+    background: rgba(16, 185, 129, 0.12) !important;
+    color: var(--lp-teal-3) !important;
+}
+
+.lp-mobile-menu__actions .lp-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+}
+
+/* Hamburger visual tweak when open */
+@media (max-width: 768px) {
+    .lp-hamburger--open {
+        background: rgba(16, 185, 129, 0.14);
+        border-color: rgba(16, 185, 129, 0.30);
+    }
+    .lp-hamburger--open span {
+        background: var(--lp-teal-3);
+    }
+
+    /* Make the nav bar itself fully opaque on mobile so the drawer
+       reads clearly against the page content. */
+    .lp-nav {
+        background: rgba(10, 16, 24, 0.95) !important;
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+    }
+}
+
+/* Desktop: hide the mobile menu even if menuOpen is true (shouldn't
+   happen, but defensive) */
+@media (min-width: 769px) {
+    .lp-mobile-menu {
+        display: none !important;
+    }
+}
+
+/* ── HERO — proper mobile sizing ── */
+@media (max-width: 768px) {
+    .lp-hero {
+        min-height: auto;
+        padding: 100px 20px 60px !important;
+    }
+    .lp-hero__layout {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+    .lp-hero__badge {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lp-hero__h1 {
+        font-size: clamp(44px, 11vw, 72px) !important;
+        line-height: 1.0;
+    }
+    .lp-hero__para {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .lp-hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .lp-hero__actions .lp-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 22px;
+    }
+    .lp-hero__avatars,
+    .lp-hero__trust {
+        justify-content: center;
+    }
+
+    /* Hide the scroll indicator on mobile — saves space, feels native */
+    .lp-hero__scroll {
+        display: none;
+    }
+}
+
+/* ── CTA bottom — full-width buttons, stacked ── */
+@media (max-width: 768px) {
+    .lp-cta__h2 {
+        font-size: clamp(34px, 9vw, 56px);
+    }
+    .lp-cta__actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .lp-cta__actions .lp-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 22px;
+    }
+}
+
+/* ── SECTION HEADINGS — scale down on mobile ── */
+@media (max-width: 768px) {
+    .lp-section-h2 {
+        font-size: clamp(32px, 8vw, 48px) !important;
+        line-height: 1.05;
+    }
+    .lp-section-sub {
+        font-size: 14px !important;
+    }
+
+    /* Giant ghost watermarks hurt readability on small screens — shrink */
+    .lp-features::before,
+    .lp-pricing::before,
+    .lp-testimonials::before {
+        font-size: clamp(60px, 14vw, 90px) !important;
+    }
+}
+
+/* ── PRICING on mobile ── */
+@media (max-width: 600px) {
+    .lp-pricing {
+        padding: 72px 12px !important;
+    }
+    .lp-plans__grid {
+        padding: 0 4px;
+    }
+    .lp-plan-card {
+        padding: 28px 22px;
+    }
+    .lp-plan-card--popular {
+        margin-top: 8px;
+    }
+    .lp-pricing__toggle-btn {
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+}
+
+/* ── FAQ on mobile ── */
+@media (max-width: 600px) {
+    .lp-faq {
+        padding: 72px 12px !important;
+    }
+    .lp-faq__q {
+        padding: 16px 16px;
+    }
+    .lp-faq__q span {
+        font-size: 14px;
+    }
+    .lp-faq__a p {
+        padding: 0 16px 16px;
+        font-size: 13px;
+    }
+}
+
+/* ── CONTAINER PADDING — tighter on phones ── */
+@media (max-width: 600px) {
+    .lp-container {
+        padding: 0 16px;
+    }
+    .lp-features,
+    .lp-steps,
+    .lp-testimonials,
+    .lp-cta,
+    .lp-stats {
+        padding: 64px 0 !important;
+    }
+    .lp-stats {
+        padding: 48px 0 !important;
+    }
+    .lp-stats__val {
+        font-size: 42px !important;
+    }
+}
+
+/* ── Stat labels + tighter grids ── */
+@media (max-width: 420px) {
+    .lp-stats__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .lp-stats__val {
+        font-size: 36px !important;
+    }
+    .lp-stats__label {
+        font-size: 11px;
+    }
+}
+
+/* ── FOOTER on mobile ── */
+@media (max-width: 600px) {
+    .lp-footer {
+        padding: 40px 0 24px;
+    }
+    .lp-footer__top {
+        padding-bottom: 32px;
+        margin-bottom: 24px;
+    }
+    .lp-footer__cols {
+        width: 100%;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+    .lp-footer__col {
+        min-width: calc(50% - 14px);
+    }
+}
+
+/* ── Prevent horizontal scroll on any mobile viewport ── */
+@media (max-width: 768px) {
+    .lp {
+        overflow-x: hidden;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 23 — RICH 3-SECTION FOOTER
+   ───────────────────────────────────────────────────────────────
+   Replaces the minimal footer with a 3-section design:
+     1. Newsletter subscribe strip (slightly lighter bg)
+     2. Main grid: brand + 3 link/contact columns
+     3. Bottom bar: copyright + craft-line
+
+   The old .lp-footer__top / __brand / __bottom rules are now dead
+   code (no markup matches them) — they're harmless but could be
+   pruned in a later cleanup batch.
+   ═══════════════════════════════════════════════════════════ */
+
+/* Override the old .lp-footer padding — the new design has its own
+   internal spacing per section. */
+.lp-footer {
+    padding: 0;
+    background: transparent;
+    border-top: none;
+}
+
+/* ── Section 1: Newsletter strip ─────────────────────────── */
+.lp-footer__newsletter {
+    /* Slightly lighter than the main footer below for visual separation */
+    background: var(--lp-800);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 36px 0;
+}
+
+.lp-footer__newsletter-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.lp-footer__newsletter-text {
+    flex: 1 1 300px;
+    min-width: 0;
+}
+
+.lp-footer__newsletter-heading {
+    font-family: var(--lp-font-d, 'Inter', system-ui, sans-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--lp-white);
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+}
+
+.lp-footer__newsletter-sub {
+    font-size: 14px;
+    color: var(--lp-500, #5c5c5c);
+    line-height: 1.5;
+    margin: 0;
+    max-width: 480px;
+}
+
+.lp-footer__newsletter-form {
+    display: flex;
+    gap: 8px;
+    flex: 1 1 360px;
+    min-width: 0;
+    max-width: 460px;
+}
+
+.lp-footer__newsletter-input {
+    flex: 1;
+    min-width: 0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--lp-white);
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.lp-footer__newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.lp-footer__newsletter-input:focus {
+    outline: none;
+    border-color: var(--lp-teal);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.lp-footer__newsletter-btn {
+    background: var(--lp-teal);
+    color: var(--lp-white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.lp-footer__newsletter-btn:hover {
+    background: var(--lp-teal-2);
+    transform: translateY(-1px);
+}
+
+.lp-footer__newsletter-btn:active {
+    transform: translateY(0);
+}
+
+/* ── Section 2: Main grid ────────────────────────────────── */
+.lp-footer__main {
+    background: var(--lp-900);
+    padding: 56px 0 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.lp-footer__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 48px;
+}
+
+.lp-footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.lp-footer__col--brand {
+    gap: 18px;
+}
+
+.lp-footer__brand-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lp-footer__brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.lp-footer__brand-name {
+    font-family: var(--lp-font-d, inherit);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--lp-white);
+    letter-spacing: 0.06em;
+    margin: 0 0 2px;
+}
+
+.lp-footer__brand-sub {
+    font-size: 10px;
+    color: var(--lp-teal);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin: 0;
+}
+
+.lp-footer__tagline {
+    font-size: 13.5px;
+    color: var(--lp-500, #5c5c5c);
+    line-height: 1.65;
+    margin: 0;
+    max-width: 320px;
+}
+
+.lp-footer__social {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.lp-footer__social-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--lp-500, #808080);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: all 0.2s ease;
+}
+
+.lp-footer__social-btn[data-net="fb"]:hover { background: #1877f2; color: white; border-color: #1877f2; }
+.lp-footer__social-btn[data-net="tw"]:hover { background: #1da1f2; color: white; border-color: #1da1f2; }
+.lp-footer__social-btn[data-net="ln"]:hover { background: #0a66c2; color: white; border-color: #0a66c2; }
+.lp-footer__social-btn[data-net="ig"]:hover {
+    background: linear-gradient(135deg, #f09433 0%, #dc2743 50%, #bc1888 100%);
+    color: white;
+    border-color: transparent;
+}
+
+.lp-footer__col-head {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--lp-white);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 6px;
+}
+
+.lp-footer__col-link {
+    font-size: 14px;
+    color: var(--lp-500, #808080);
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    padding: 2px 0;
+}
+
+.lp-footer__col-link:hover {
+    color: var(--lp-teal);
+    padding-left: 4px;
+}
+
+.lp-footer__contact-line {
+    font-size: 14px;
+    color: var(--lp-500, #808080);
+    margin: 0;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.lp-footer__contact-icon {
+    flex-shrink: 0;
+    width: 18px;
+    text-align: center;
+}
+
+/* ── Section 3: Bottom bar ───────────────────────────────── */
+.lp-footer__bar {
+    background: var(--lp-black, #0a0f0d);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 18px 0;
+}
+
+.lp-footer__bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lp-footer__bar-left,
+.lp-footer__bar-right {
+    font-size: 12px;
+    color: var(--lp-500, #5c5c5c);
+    margin: 0;
+    letter-spacing: 0.04em;
+}
+
+.lp-footer__bar-left {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .lp-footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px 32px;
+    }
+    .lp-footer__col--brand {
+        grid-column: 1 / -1;
+        max-width: 480px;
+    }
+    .lp-footer__newsletter-inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 560px) {
+    .lp-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .lp-footer__col--brand {
+        max-width: none;
+    }
+    .lp-footer__main {
+        padding: 40px 0 28px;
+    }
+    .lp-footer__newsletter {
+        padding: 28px 0;
+    }
+    .lp-footer__newsletter-form {
+        flex-direction: column;
+    }
+    .lp-footer__newsletter-btn {
+        padding: 14px 24px;
+    }
+    .lp-footer__bar-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .lp-footer__newsletter-heading {
+        font-size: 20px;
+    }
+}
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 24 — HERO AMBIENT GRADIENT BLOBS
+   ───────────────────────────────────────────────────────────────
+   Implements option 2 from the landing-page-animation idea:
+   gradient mesh blobs slowly drifting in the hero background.
+
+   Constraints from spec:
+     - Hero section only (other sections stay clean — these rules
+       only target .lp-hero__blob inside .lp-hero)
+     - Pure CSS (no JS, no Lottie)
+     - Use brand colors: FitSync teal #10B981 with low alpha
+     - prefers-reduced-motion fallback for accessibility
+
+   Implementation: overrides the existing .lp-hero__blob and
+   .lp-hero__blob--1/2/3 rules. The existing rules used plain
+   white-on-black at 4% opacity which was nearly invisible. New
+   rules use teal at higher opacity, distinct drift paths per
+   blob, and slower timing for a calmer feel.
+   ═══════════════════════════════════════════════════════════ */
+
+.lp-hero__blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    will-change: transform, opacity;
+    /* Each blob gets its own animation declaration below — no shared
+       lpFloat. Different durations + delays + easings so they never
+       sync up, which is what makes the effect feel ambient rather
+       than mechanical. */
+}
+
+.lp-hero__blob--1 {
+    /* Top-left, large warm teal — anchors the composition */
+    width: 560px;
+    height: 560px;
+    top: -180px;
+    left: -160px;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(16, 185, 129, 0) 65%);
+    opacity: 0.85;
+    animation: lpBlobDrift1 22s ease-in-out infinite;
+}
+
+.lp-hero__blob--2 {
+    /* Bottom-right, mid teal — counterweight */
+    width: 480px;
+    height: 480px;
+    bottom: -140px;
+    right: -120px;
+    background: radial-gradient(circle, rgba(52, 211, 153, 0.18) 0%, rgba(52, 211, 153, 0) 65%);
+    opacity: 0.75;
+    animation: lpBlobDrift2 28s ease-in-out infinite;
+    animation-delay: -6s;
+}
+
+.lp-hero__blob--3 {
+    /* Center-ish, smaller darker teal — depth accent */
+    width: 360px;
+    height: 360px;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(5, 150, 105, 0.16) 0%, rgba(5, 150, 105, 0) 65%);
+    opacity: 0.65;
+    animation: lpBlobDrift3 34s ease-in-out infinite;
+    animation-delay: -12s;
+}
+
+/* Three distinct drift paths. Each blob follows a different gentle
+   loop — translate + slight scale — and the loops never align in
+   time because they have different periods and starting offsets. */
+@keyframes lpBlobDrift1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25%      { transform: translate(40px, 30px) scale(1.05); }
+    50%      { transform: translate(20px, 60px) scale(0.95); }
+    75%      { transform: translate(-30px, 30px) scale(1.02); }
+}
+
+@keyframes lpBlobDrift2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%      { transform: translate(-50px, -20px) scale(1.08); }
+    66%      { transform: translate(-20px, -50px) scale(0.92); }
+}
+
+@keyframes lpBlobDrift3 {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    20%      { transform: translate(-45%, -52%) scale(1.06); }
+    40%      { transform: translate(-55%, -48%) scale(0.94); }
+    60%      { transform: translate(-48%, -45%) scale(1.03); }
+    80%      { transform: translate(-52%, -55%) scale(0.97); }
+}
+
+/* Accessibility — respect users' motion preferences.
+   When prefers-reduced-motion is set:
+     - Disable the drift animations entirely (blobs stay still)
+     - Lower their opacity so they're a quieter background tint
+   The colors and positions stay so the visual identity survives. */
+@media (prefers-reduced-motion: reduce) {
+    .lp-hero__blob--1,
+    .lp-hero__blob--2,
+    .lp-hero__blob--3 {
+        animation: none;
+    }
+    .lp-hero__blob--1 { opacity: 0.5; }
+    .lp-hero__blob--2 { opacity: 0.45; }
+    .lp-hero__blob--3 { opacity: 0.4; }
+}
+
+/* On small phones, scale the blobs down a touch so they don't
+   dominate the (smaller) hero area. */
+@media (max-width: 600px) {
+    .lp-hero__blob--1 { width: 380px; height: 380px; top: -120px; left: -120px; }
+    .lp-hero__blob--2 { width: 320px; height: 320px; bottom: -80px; right: -80px; }
+    .lp-hero__blob--3 { width: 240px; height: 240px; }
+}
+/* ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   BATCH 25 — HERO FLOATING GYM ICONS
+   ───────────────────────────────────────────────────────────────
+   Six small gym-themed inline SVG icons (dumbbell, kettlebell,
+   heart pulse, lightning, stopwatch, small dumbbell) scattered
+   around the hero, each drifting slowly with its own animation.
+   Layered ON TOP of the gradient blobs from batch 24. Together
+   they make the hero feel alive without screaming "look at me."
+
+   Constraints honoured:
+     - Hero only (.lp-hero__icons + .lp-hero__icon descendants)
+     - Pure CSS (no JS, no Lottie)
+     - Brand teal color via currentColor (set on container)
+     - prefers-reduced-motion fallback
+     - pointer-events: none so icons don't intercept clicks
+   ═══════════════════════════════════════════════════════════ */
+
+.lp-hero__icons {
+    /* Container fills the hero. Icons inside use absolute positioning
+       relative to this. The teal color cascades to all child SVGs via
+       `fill="currentColor"` and `stroke="currentColor"` in the markup. */
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    color: var(--lp-teal, #10b981);
+    z-index: 1;
+}
+
+.lp-hero__icon {
+    position: absolute;
+    pointer-events: none;
+    /* Default opacity is low — icons are decoration, not headline.
+       Per-icon overrides below. Will-change to hint the GPU. */
+    will-change: transform, opacity;
+    filter: drop-shadow(0 4px 16px rgba(16, 185, 129, 0.15));
+}
+
+/* Six icons placed around the hero. Mostly clear of the centre-left
+   text column (where the headline + CTAs live), so they decorate the
+   margins rather than competing with content. */
+
+.lp-hero__icon--1 {
+    /* Big dumbbell, top-right corner area. The most prominent icon. */
+    width: 84px;
+    height: 84px;
+    top: 14%;
+    right: 6%;
+    opacity: 0.16;
+    animation: lpIconFloat1 16s ease-in-out infinite;
+}
+
+.lp-hero__icon--2 {
+    /* Kettlebell, bottom-left. Mid-sized. */
+    width: 64px;
+    height: 64px;
+    bottom: 18%;
+    left: 4%;
+    opacity: 0.13;
+    animation: lpIconFloat2 19s ease-in-out infinite;
+    animation-delay: -3s;
+}
+
+.lp-hero__icon--3 {
+    /* Heart pulse line — wider but flat. Lower-right of the hero. */
+    width: 110px;
+    height: 110px;
+    bottom: 30%;
+    right: 12%;
+    opacity: 0.18;
+    animation: lpIconFloat3 14s ease-in-out infinite;
+    animation-delay: -5s;
+}
+
+.lp-hero__icon--4 {
+    /* Lightning bolt — top-left, small. Energy accent. */
+    width: 48px;
+    height: 48px;
+    top: 22%;
+    left: 8%;
+    opacity: 0.14;
+    animation: lpIconFloat4 18s ease-in-out infinite;
+    animation-delay: -7s;
+}
+
+.lp-hero__icon--5 {
+    /* Stopwatch, top-right slightly below dumbbell. */
+    width: 56px;
+    height: 56px;
+    top: 56%;
+    right: 4%;
+    opacity: 0.12;
+    animation: lpIconFloat5 22s ease-in-out infinite;
+    animation-delay: -10s;
+}
+
+.lp-hero__icon--6 {
+    /* Tiny dumbbell, mid-bottom. */
+    width: 40px;
+    height: 40px;
+    bottom: 8%;
+    left: 35%;
+    opacity: 0.10;
+    animation: lpIconFloat6 17s ease-in-out infinite;
+    animation-delay: -13s;
+}
+
+/* Six distinct drift animations. Each combines gentle translate
+   + slight rotation. Different periods + offsets prevent visual sync. */
+
+@keyframes lpIconFloat1 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33%      { transform: translate(-12px, 18px) rotate(-4deg); }
+    66%      { transform: translate(8px, 24px) rotate(3deg); }
+}
+
+@keyframes lpIconFloat2 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50%      { transform: translate(14px, -20px) rotate(6deg); }
+}
+
+@keyframes lpIconFloat3 {
+    0%, 100% { transform: translate(0, 0); }
+    25%      { transform: translate(-16px, -8px); }
+    50%      { transform: translate(-6px, -18px); }
+    75%      { transform: translate(8px, -10px); }
+}
+
+@keyframes lpIconFloat4 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    40%      { transform: translate(8px, 14px) rotate(8deg) scale(1.06); }
+    70%      { transform: translate(-4px, 8px) rotate(-3deg) scale(0.96); }
+}
+
+@keyframes lpIconFloat5 {
+    0%, 100% { transform: translate(0, 0); }
+    33%      { transform: translate(-10px, -12px); }
+    66%      { transform: translate(-4px, 14px); }
+}
+
+@keyframes lpIconFloat6 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50%      { transform: translate(20px, -10px) rotate(-5deg); }
+}
+
+/* Reduced motion: stop animations, keep icons static at their
+   resting positions. Opacity stays — they just don't drift. */
+@media (prefers-reduced-motion: reduce) {
+    .lp-hero__icon {
+        animation: none !important;
+    }
+}
+
+/* On phones, hide some icons to avoid visual clutter on the smaller
+   hero. Keep the prominent ones (1, 3) and one accent (4). The rest
+   would overcrowd a 360px viewport. Also shrink the survivors. */
+@media (max-width: 768px) {
+    .lp-hero__icon--2,
+    .lp-hero__icon--5,
+    .lp-hero__icon--6 {
+        display: none;
+    }
+    .lp-hero__icon--1 {
+        width: 60px;
+        height: 60px;
+        top: 8%;
+        right: 4%;
+        opacity: 0.13;
+    }
+    .lp-hero__icon--3 {
+        width: 80px;
+        height: 80px;
+        bottom: 22%;
+        right: 6%;
+        opacity: 0.14;
+    }
+    .lp-hero__icon--4 {
+        width: 36px;
+        height: 36px;
+        top: 14%;
+        left: 6%;
+        opacity: 0.12;
+    }
+}
+/* ═══════════════════════════════════════════════════════════ */

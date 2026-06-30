@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f1a01"
+  },
+  "invoiceNumber": "PINV-2026-0005",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f17d6"
+  },
+  "billingPeriodStart": {
+    "$date": "2026-03-31T18:30:00.000Z"
+  },
+  "billingPeriodEnd": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "lineItems": [
+    {
+      "module": "reports",
+      "label": "Reports module",
+      "period": "monthly",
+      "amount": 1800
+    },
+    {
+      "module": "staff",
+      "label": "Staff module",
+      "period": "monthly",
+      "amount": 1350
+    },
+    {
+      "module": "promotions",
+      "label": "Promotions module",
+      "period": "monthly",
+      "amount": 1350
+    }
+  ],
+  "subtotal": 4500,
+  "gst": 810,
+  "total": 5310,
+  "status": "paid",
+  "issuedAt": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-05-14T18:30:00.000Z"
+  },
+  "paidAt": {
+    "$date": "2026-05-04T18:30:00.000Z"
+  },
+  "paymentMode": "UPI",
+  "notes": "",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:19.145Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.145Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f8a277bf347ccd861f1a02"
+  },
+  "invoiceNumber": "PINV-2026-0006",
+  "companyId": {
+    "$oid": "69f8a274bf347ccd861f18eb"
+  },
+  "billingPeriodStart": {
+    "$date": "2026-03-31T18:30:00.000Z"
+  },
+  "billingPeriodEnd": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "lineItems": [
+    {
+      "module": "reports",
+      "label": "Reports module",
+      "period": "monthly",
+      "amount": 1280
+    },
+    {
+      "module": "staff",
+      "label": "Staff module",
+      "period": "monthly",
+      "amount": 960
+    },
+    {
+      "module": "promotions",
+      "label": "Promotions module",
+      "period": "monthly",
+      "amount": 960
+    }
+  ],
+  "subtotal": 3200,
+  "gst": 576,
+  "total": 3776,
+  "status": "due",
+  "issuedAt": {
+    "$date": "2026-04-29T18:30:00.000Z"
+  },
+  "dueDate": {
+    "$date": "2026-05-14T18:30:00.000Z"
+  },
+  "paidAt": null,
+  "paymentMode": null,
+  "notes": "",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-05-04T13:43:19.146Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-04T13:43:19.146Z"
+  }
+}]
